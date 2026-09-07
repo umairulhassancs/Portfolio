@@ -16,6 +16,7 @@ const TECH_ITEMS = [
   { name: 'Three.js', category: '3D Web' },
   { name: 'Tailwind CSS v4', category: 'Styling' },
   { name: 'Viro React (AR)', category: 'Augmented Reality' },
+  { name: 'Zustand 5', category: 'State' },
   { name: 'Docker', category: 'DevOps' },
   { name: 'REST & GraphQL', category: 'Architecture' },
 ]

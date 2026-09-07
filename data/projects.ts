@@ -547,6 +547,255 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 'nutrilens',
+    title: 'NutriLens AI',
+    tagline: 'Multimodal vision nutrition & clinical metabolic intelligence mobile engine.',
+    year: '2025–26',
+    type: 'Mobile App',
+    status: 'Completed',
+    platformBadge: 'React Native & Expo SDK 54',
+    coverImage: '/images/nutrilens/2.jpeg',
+    description:
+      'Enterprise-grade mobile intelligence platform converting food photography and grocery barcodes into real-time macronutrient telemetry and clinical metabolic coaching.',
+    longDescription:
+      'A full-stack cross-platform mobile intelligence engine built with React Native and Expo SDK 54, integrating multimodal AI vision, zero-latency grocery barcode scanning, and dynamic Mifflin-St Jeor metabolic expenditure calculations. Designed to eliminate calorie logging friction, NutriLens routes in-memory Base64 image buffers through OpenRouter with an automated offline heuristic dataset fallback. Daily caloric expenditure, BMR, and TDEE adapt dynamically to activity levels and goal pacing, while an embedded clinical nutrition AI coach analyzes real-time daily intake to provide actionable dietary guidance without syntax clutter.',
+    highlights: [
+      { icon: '📸', label: 'In-memory camera vision pipeline with zero-latency Base64 streaming' },
+      { icon: '🧠', label: 'Multimodal food segmentation with offline heuristic knowledge fallback' },
+      { icon: '⚡', label: 'Zero-latency UPC/EAN barcode scanner backed by OpenFoodFacts API (3M+ items)' },
+      { icon: '🔥', label: 'Clinically validated Mifflin-St Jeor metabolic physics engine (BMR & TDEE)' },
+      { icon: '🤖', label: 'NutriLens AI Dietitian: goal-oriented nutrition chatbot with live context injection' },
+      { icon: '🛡️', label: 'Native markdown regex sanitizer eliminating asterisks and raw formatting' },
+      { icon: '📊', label: '90-day interactive compliance calendar, trajectory charts & meal telemetry' },
+      { icon: '🔒', label: 'Zustand 5 reactive state orchestration with user-partitioned Firebase RTDB' },
+    ],
+    tech: [
+      'React Native',
+      'Expo SDK 54',
+      'TypeScript',
+      'Zustand 5',
+      'OpenRouter AI',
+      'Firebase RTDB',
+      'OpenFoodFacts API',
+      'Mifflin-St Jeor Engine',
+      'Reanimated',
+      'Expo Camera',
+    ],
+    repoUrl: 'https://github.com/umairulhassancs/Nutrilens-',
+    screens: [
+      {
+        label: '01 Auth & Access',
+        src: '/images/nutrilens/1.jpeg',
+        caption: 'Secure multi-session authentication with credential caching and partitioned profile binding',
+      },
+      {
+        label: '02 Metabolic Dashboard',
+        src: '/images/nutrilens/2.jpeg',
+        caption: 'Executive energy dashboard with remaining kcal gauge, macro progress, and AI briefing card',
+      },
+      {
+        label: '03 Calorie Surplus Alert',
+        src: '/images/nutrilens/3.jpeg',
+        caption: 'Dynamic surplus state indicator with threshold warning telemetry and deficit pacing alerts',
+      },
+      {
+        label: '04 AI Vision Recognition',
+        src: '/images/nutrilens/4.jpeg',
+        caption: 'In-memory multimodal food segmentation, detected portion weighting, and drafted meal items',
+      },
+      {
+        label: '05 Portion Confirmation',
+        src: '/images/nutrilens/5.jpeg',
+        caption: 'Itemized macro confirmation with real-time budget impact analysis and atomic log commit',
+      },
+      {
+        label: '06 NutriLens AI Coach',
+        src: '/images/nutrilens/6.jpeg',
+        caption: 'Goal-oriented clinical nutrition chatbot with live metabolic state injection and clean markdown',
+      },
+      {
+        label: '07 Compliance Tracker',
+        src: '/images/nutrilens/7.jpeg',
+        caption: '7-day and 14-day compliance telemetry tracking in-plan vs overeat adherence cycles',
+      },
+      {
+        label: '08 Energy & Macro Analytics',
+        src: '/images/nutrilens/8.jpeg',
+        caption: 'Daily calorie trajectory bar charts and macronutrient distribution breakdown (P/C/F)',
+      },
+      {
+        label: '09 90-Day Calendar Modal',
+        src: '/images/nutrilens/9.jpeg',
+        caption: 'Interactive monthly compliance calendar with color-coded daily goal status dots',
+      },
+      {
+        label: '10 Nutritional Telemetry',
+        src: '/images/nutrilens/10.jpeg',
+        caption: 'Itemized meal inspection displaying gram-level protein, carbohydrate, fat, and calorie counts',
+      },
+      {
+        label: '11 Settings & Recalibration',
+        src: '/images/nutrilens/11.jpeg',
+        caption: 'Biometric adjustments instantly recalibrating BMR, TDEE, and macro distribution targets',
+      },
+      {
+        label: '12 Historical Meal Stream',
+        src: '/images/nutrilens/12.jpeg',
+        caption: 'Timestamped chronological nutrition journal with multi-tier date filters and log deletion',
+      },
+    ],
+    modules: [
+      {
+        id: 'vision-engine',
+        name: 'Multimodal AI Food Vision',
+        tag: 'Computer Vision & Inference',
+        description:
+          'In-memory image capture and segmentation pipeline converting plate photography into structured macronutrient telemetry without intermediate disk I/O.',
+        highlights: [
+          'Direct Base64 memory buffer piping via expo-camera eliminating filesystem caching latency',
+          'Dynamic OpenRouter AI routing with structured JSON extraction and portion estimation',
+          'Automated fallback to embedded 180KB verified nutritional dataset on network drops',
+        ],
+      },
+      {
+        id: 'barcode-scanner',
+        name: 'Zero-Latency Barcode Scanner',
+        tag: 'Hardware Integration & Telemetry',
+        description:
+          'High-throughput barcode scanning engine utilizing native camera sensors to identify packaged grocery items and fetch official nutrition facts.',
+        highlights: [
+          'Instant UPC-A, UPC-E, EAN-8, and EAN-13 hardware symbology recognition',
+          'Direct OpenFoodFacts REST API integration querying over 3,000,000 global products',
+          'Automated per-100g to custom serving size conversion with proportional macro scaling',
+        ],
+      },
+      {
+        id: 'metabolic-engine',
+        name: 'Mifflin-St Jeor Physics Engine',
+        tag: 'Metabolic Science & Calculations',
+        description:
+          'Clinically validated mathematical engine computing exact Basal Metabolic Rate and Total Daily Energy Expenditure based on dynamic biometrics.',
+        highlights: [
+          'Gender-specific BMR computation incorporating current weight, height, and age',
+          '5-tier physical activity multipliers scaling total daily expenditure from 1.2x to 1.9x',
+          'Dynamic goal pacing allocating 2.0g/kg protein and 25% fats with remaining calories to carbs',
+        ],
+      },
+      {
+        id: 'ai-dietitian',
+        name: 'Clinical AI Nutritionist Coach',
+        tag: 'Conversational Intelligence',
+        description:
+          'Goal-oriented clinical sports nutrition assistant injecting real-time metabolic context into every query for highly targeted dietary advice.',
+        highlights: [
+          'Automated context injection with remaining calories, consumed macros, and meal logs',
+          'Custom regex markdown sanitizer stripping asterisks for clean native mobile typography',
+          'Session-persistent chat histories synchronized to Firebase Realtime Database',
+        ],
+      },
+      {
+        id: 'compliance-analytics',
+        name: '90-Day Compliance & Trajectory',
+        tag: 'Data Visualization & Tracking',
+        description:
+          'Long-term metabolic adherence engine visualizing adherence trends, caloric trajectories, and multi-week macro distribution splits.',
+        highlights: [
+          'Interactive monthly compliance calendar with color-coded target adherence dots',
+          'Dynamic React Native Chart Kit bar charts plotting daily intake against targets',
+          'Multi-tier time filters: 7-day, 14-day, monthly, and full 90-day historical logs',
+        ],
+      },
+      {
+        id: 'state-architecture',
+        name: 'Reactive State & Cloud Isolation',
+        tag: 'State Management & Security',
+        description:
+          'Zustand 5 reactive store architecture combined with strictly partitioned Firebase Realtime Database isolation.',
+        highlights: [
+          'Synchronous, leak-free state transitions replacing legacy event-bus listeners',
+          'User-partitioned Firebase security rules strictly isolating records to authenticated UIDs',
+          'Atomic account deletion cascade permanently removing profile, meal logs, and chats',
+        ],
+      },
+    ],
+    architectureFlow: [
+      {
+        step: '01',
+        title: 'In-Memory Image Ingestion',
+        detail:
+          'Camera or gallery captures photo with direct base64: true buffer generation, bypassing local disk I/O and eliminating file latency.',
+      },
+      {
+        step: '02',
+        title: 'OpenRouter Vision Routing',
+        detail:
+          'Multimodal payload dispatches to AI vision models, with automated circuit-breaker fallback to local clinical dataset if network drops.',
+      },
+      {
+        step: '03',
+        title: 'Segmented Nutrition Normalization',
+        detail:
+          'AI-detected food items and portion weights are normalized into standard grams, caloric values, and precise P/C/F splits.',
+      },
+      {
+        step: '04',
+        title: 'Mifflin-St Jeor Budget Validation',
+        detail:
+          'Metabolic engine computes meal impact against dynamic BMR/TDEE targets, updating remaining budget and surplus warning states.',
+      },
+      {
+        step: '05',
+        title: 'Zustand & Cloud State Synchronization',
+        detail:
+          'Meal draft commits to Zustand reactive store and synchronously syncs to Firebase Realtime Database under partitioned user path.',
+      },
+    ],
+    challenges: [
+      {
+        challenge: 'Memory Leaks and Navigation Race Conditions in Legacy Event Emitters',
+        solution:
+          'Migrated the entire global event bus (EventRegister) to Zustand v5 reactive stores (useMealDraftStore, useUserStore). State updates became synchronous, predictable, and cleanly bound to React component lifecycles without dangling unmount listeners.',
+      },
+      {
+        challenge: 'Filesystem I/O Latency in Mobile Camera Capture',
+        solution:
+          'Configured CameraView.takePictureAsync and ImagePicker with direct base64: true in-memory buffers. This eliminated intermediate file system cache reads/writes, avoided deprecated Expo SDK 54 file-system APIs, and cut vision payload dispatch time by over 400ms.',
+      },
+      {
+        challenge: 'API Rate Limits and Offline Single-Point-of-Failure',
+        solution:
+          'Engineered a dual-layer resilience architecture. If OpenRouter returns HTTP 429 or network timeouts occur, the ingestion pipeline immediately routes to a bundled 180KB verified clinical nutrition dataset, ensuring users can always log meals.',
+      },
+      {
+        challenge: 'Unstyled Markdown Syntax Clutter in Native Mobile UI',
+        solution:
+          'Built a lightweight regex-based cleanMarkdownText sanitizer in lib/ai.ts that strips markdown asterisks, bold/italic markers, and hash headers while preserving native line breaks and list bullets, delivering clean native mobile typography.',
+      },
+    ],
+    benchmarks: [
+      {
+        metric: '< 2.2s',
+        label: 'Vision Inference Latency',
+        detail: 'End-to-end photo capture to itemized meal segmentation and macro breakdown.',
+      },
+      {
+        metric: '3M+',
+        label: 'Grocery Barcode Database',
+        detail: 'Instant OpenFoodFacts lookup across global UPC, EAN-8, and EAN-13 barcodes.',
+      },
+      {
+        metric: '100%',
+        label: 'Offline Availability',
+        detail: 'Guaranteed heuristic dataset fallback during connectivity interruptions.',
+      },
+      {
+        metric: '0ms',
+        label: 'Filesystem Cache Overhead',
+        detail: 'Direct in-memory Base64 streaming bypassing temporary storage writes.',
+      },
+    ],
+  },
+  {
     id: 'fingo',
     title: 'FinGo Marketplace',
     tagline: 'Multi-vendor commerce platform with role-based merchant operations.',

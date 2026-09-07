@@ -9,7 +9,7 @@ const ease = [0.16, 1, 0.3, 1] as const
 const capabilities = [
   {
     icon: Layers,
-    value: '5+',
+    value: '6+',
     label: 'End-to-End Projects',
     detail: 'Full-stack web, mobile, SaaS, ERP, commerce, and applied AI systems.',
     tag: 'Projects',

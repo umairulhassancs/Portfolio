@@ -37,6 +37,7 @@ const NAV_LINKS = [
 const CASE_STUDIES = [
   { label: 'Vouch — Hardware QR SaaS', href: '/projects/vouch' },
   { label: 'GardenMate — AI ViT & AR', href: '/projects/gardenmate' },
+  { label: 'NutriLens — Vision Nutrition AI', href: '/projects/nutrilens' },
   { label: 'FinGo — Multi-Vendor Commerce', href: '/projects/fingo' },
   { label: 'Evershine — Biometrics & ERP', href: '/projects/evershine' },
   { label: 'Voice AI Copilot — Voice Assistant', href: '/projects/copilot' },

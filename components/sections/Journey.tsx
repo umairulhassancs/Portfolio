@@ -27,6 +27,15 @@ const JOURNEY_MILESTONES = [
   },
   {
     year: '2025 – 2026',
+    role: 'Creator & Mobile Engineer',
+    title: 'Engineered NutriLens AI Platform',
+    project: 'NutriLens AI Engine',
+    description:
+      'Engineered a multimodal vision nutrition and clinical metabolic intelligence mobile engine in React Native and Expo SDK 54. Features in-memory camera food recognition, OpenFoodFacts barcode telemetry, clinical Mifflin-St Jeor metabolic equations, Zustand 5 state orchestration, and a dedicated AI dietitian coach.',
+    tags: ['React Native', 'Expo SDK 54', 'TypeScript', 'Zustand 5', 'OpenRouter AI', 'Firebase RTDB', 'Mifflin-St Jeor'],
+  },
+  {
+    year: '2025 – 2026',
     role: 'Project Lead & Developer',
     title: 'Developed GardenMate Ecosystem',
     project: 'GardenMate (Final Year Project)',
