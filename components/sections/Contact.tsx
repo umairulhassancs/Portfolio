@@ -104,7 +104,7 @@ export function Contact() {
         >
           <span className="inline-flex items-center gap-2 font-sans font-bold uppercase tracking-[0.16em] text-[10px] text-accent border border-accent/40 bg-accent/5 px-4 py-2 rounded-full shadow-[0_0_20px_rgba(56,189,248,0.1)]">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            Open for Full-Time Senior Roles &amp; Selective Architecture Contracts
+            Open to Full-Time Full-Stack, Web &amp; Mobile Development Roles
           </span>
         </motion.div>
 

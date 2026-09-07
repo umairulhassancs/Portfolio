@@ -153,11 +153,6 @@ export function Hero() {
                     Full-Stack Developer
                   </span>
                 </div>
-
-                <div className="flex items-center gap-1 sm:gap-1.5 text-[8px] sm:text-xs text-muted-foreground font-mono shrink-0">
-                  <span className="w-1 sm:w-1.5 h-1 sm:h-1.5 rounded-full bg-emerald-400" />
-                  <span>PKT</span>
-                </div>
               </div>
 
             </div>
