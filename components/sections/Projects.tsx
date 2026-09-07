@@ -81,17 +81,17 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       {/* ── Device Visual Showcase (Clean Static Image) ───────── */}
       <Link 
         href={`/projects/${project.id}`}
-        className="relative px-2 sm:px-6 py-2 sm:py-5 bg-background/50 flex flex-col items-center justify-between border-b border-border/70 overflow-hidden min-h-[140px] xs:min-h-[170px] sm:min-h-[260px] md:min-h-[360px] cursor-pointer"
+        className="relative px-2 sm:px-6 py-2 sm:py-5 bg-background/50 flex flex-col items-center justify-between border-b border-border/70 overflow-hidden min-h-[140px] xs:min-h-[170px] sm:min-h-[360px] md:min-h-[430px] cursor-pointer"
         aria-label={`Open ${project.title} case study`}
       >
         {/* Device Container */}
-        <div className="relative w-full flex items-center justify-center py-1 sm:py-2 max-w-[480px] flex-1">
+        <div className="relative w-full flex items-center justify-center py-1 sm:py-3 max-w-[480px] flex-1">
           {project.type === 'Mobile App' ? (
             <div className="relative w-full flex items-center justify-center transition-transform duration-300 group-hover:scale-[1.02]">
               {/* Subtle Ambient Radial Glow */}
               <div 
                 aria-hidden="true" 
-                className="pointer-events-none absolute w-32 sm:w-52 h-32 sm:h-52 bg-accent/15 rounded-full blur-3xl -z-10 opacity-75 group-hover:opacity-100 transition-opacity"
+                className="pointer-events-none absolute w-32 sm:w-64 h-32 sm:h-64 bg-accent/15 rounded-full blur-3xl -z-10 opacity-75 group-hover:opacity-100 transition-opacity"
               />
 
               <PhoneMockup

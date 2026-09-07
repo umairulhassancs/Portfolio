@@ -109,7 +109,7 @@ export function Footer() {
         </div>
 
         {/* Middle Section: Navigation Columns */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-10 border-b border-border/60">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 py-10 border-b border-border/60">
           
           {/* Col 1: Main Sections */}
           <div>
@@ -203,38 +203,6 @@ export function Footer() {
                 </a>
               </li>
             </ul>
-          </div>
-
-          {/* Col 4: Engineering Specs */}
-          <div>
-            <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-tertiary block mb-3.5">
-              Stack &amp; Spec
-            </span>
-            <div className="space-y-1.5 font-mono text-[11px] text-muted-foreground">
-              <div className="flex items-center justify-between py-1 border-b border-border/40">
-                <span className="text-tertiary">Framework</span>
-                <span className="text-foreground font-semibold">Next.js 16</span>
-              </div>
-              <div className="flex items-center justify-between py-1 border-b border-border/40">
-                <span className="text-tertiary">Runtime</span>
-                <span className="text-foreground font-semibold">React 19</span>
-              </div>
-              <div className="flex items-center justify-between py-1 border-b border-border/40">
-                <span className="text-tertiary">Language</span>
-                <span className="text-foreground font-semibold">TypeScript</span>
-              </div>
-              <div className="flex items-center justify-between py-1 border-b border-border/40">
-                <span className="text-tertiary">Styling</span>
-                <span className="text-foreground font-semibold">Tailwind CSS</span>
-              </div>
-              <div className="flex items-center justify-between py-1">
-                <span className="text-tertiary">Domain</span>
-                <span className="text-accent font-semibold flex items-center gap-1">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  umairulhassan.site
-                </span>
-              </div>
-            </div>
           </div>
 
         </div>
