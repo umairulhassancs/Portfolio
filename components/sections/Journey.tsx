@@ -26,7 +26,7 @@ const JOURNEY_MILESTONES = [
     tags: ['Next.js 16', 'React 19', 'TypeScript', 'Prisma', 'PostgreSQL', 'Biometric Hardware', 'Tailwind CSS'],
   },
   {
-    year: '2025 – 2026',
+    year: '2025',
     role: 'Creator & Mobile Engineer',
     title: 'Engineered NutriLens AI Platform',
     project: 'NutriLens AI Engine',

@@ -550,7 +550,7 @@ export const projects: Project[] = [
     id: 'nutrilens',
     title: 'NutriLens AI',
     tagline: 'Multimodal vision nutrition & clinical metabolic intelligence mobile engine.',
-    year: '2025–26',
+    year: '2025',
     type: 'Mobile App',
     status: 'Completed',
     platformBadge: 'React Native & Expo SDK 54',

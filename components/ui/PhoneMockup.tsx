@@ -23,28 +23,28 @@ export function PhoneMockup({
     <div className={cn(
       "relative mx-auto select-none shrink-0 transition-all",
       compact 
-        ? "w-full max-w-[110px] xs:max-w-[135px] sm:max-w-none sm:w-[210px] md:w-[235px] lg:w-[250px]" 
-        : "w-[220px] sm:w-[250px] md:w-[270px] max-w-full",
+        ? "w-full max-w-[95px] xs:max-w-[115px] sm:max-w-none sm:w-[145px] md:w-[155px] lg:w-[165px]" 
+        : "w-[160px] sm:w-[180px] md:w-[200px] max-w-full",
       className
     )}>
       {/* Outer Titanium Bezel */}
       <div className={cn(
         "relative bg-gradient-to-b from-slate-700 via-slate-800 to-slate-950 border border-slate-700/80 shadow-[0_20px_50px_rgba(0,0,0,0.8),0_0_35px_rgba(56,189,248,0.12)]",
-        compact ? "rounded-[18px] sm:rounded-[36px] p-1 sm:p-2.5" : "rounded-[28px] sm:rounded-[42px] p-1.5 sm:p-2.5"
+        compact ? "rounded-[20px] sm:rounded-[32px] p-1 sm:p-1.5" : "rounded-[28px] sm:rounded-[36px] p-1.5"
       )}>
         
-        {/* Inner Phone Screen Body */}
+        {/* Inner Phone Screen Body (Exact 9:19.5 smartphone aspect ratio) */}
         <div className={cn(
-          "relative w-full overflow-hidden bg-black border border-slate-900",
-          compact ? "aspect-[9/17] rounded-[14px] sm:rounded-[28px]" : "aspect-[9/18.5] rounded-[22px] sm:rounded-[32px]"
+          "relative w-full overflow-hidden bg-black border border-slate-900 aspect-[9/19.5]",
+          compact ? "rounded-[16px] sm:rounded-[26px]" : "rounded-[22px] sm:rounded-[30px]"
         )}>
           
           {/* Dynamic Island Notch */}
           <div className={cn(
-            "absolute left-1/2 -translate-x-1/2 rounded-full bg-black border border-white/10 z-30 flex items-center justify-end px-1.5 pointer-events-none",
-            compact ? "top-1 sm:top-2 w-10 sm:w-16 h-2 sm:h-3.5" : "top-1.5 sm:top-2 w-14 sm:w-20 h-3 sm:h-4.5"
+            "absolute left-1/2 -translate-x-1/2 rounded-full bg-black border border-white/10 z-30 flex items-center justify-end px-1 pointer-events-none",
+            compact ? "top-1 sm:top-1.5 w-8 sm:w-11 h-1.5 sm:h-2" : "top-1.5 sm:top-2 w-12 sm:w-16 h-2.5 sm:h-3"
           )}>
-            <div className={cn("rounded-full bg-[#151515] border border-white/10", compact ? "w-1 sm:w-1.5 h-1 sm:h-1.5" : "w-1.5 sm:w-2 h-1.5 sm:h-2")} />
+            <div className={cn("rounded-full bg-[#151515] border border-white/10", compact ? "w-1 sm:w-1.5 h-1 sm:h-1.5" : "w-1.5 h-1.5")} />
           </div>
 
           {/* Screenshot Content */}
@@ -56,7 +56,7 @@ export function PhoneMockup({
               priority={priority}
               unoptimized={true}
               className="object-cover object-top"
-              sizes={compact ? "(max-width: 640px) 135px, 280px" : "(max-width: 768px) 280px, 320px"}
+              sizes={compact ? "(max-width: 640px) 115px, 200px" : "(max-width: 768px) 200px, 240px"}
             />
           </div>
 
@@ -71,7 +71,7 @@ export function PhoneMockup({
             aria-hidden="true"
             className={cn(
               "pointer-events-none absolute left-1/2 -translate-x-1/2 rounded-full bg-white/40 z-30",
-              compact ? "bottom-1 sm:bottom-2 w-10 sm:w-16 h-0.5 sm:h-1" : "bottom-1.5 w-14 sm:w-20 h-0.5 sm:h-1"
+              compact ? "bottom-1 sm:bottom-1.5 w-8 sm:w-12 h-0.5" : "bottom-1.5 w-12 sm:w-16 h-0.5"
             )}
           />
         </div>
