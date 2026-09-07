@@ -189,8 +189,8 @@ export function Navbar() {
             </div>
 
             {/* Navigation Links (Instrument Serif Editorial Stack) */}
-            <nav aria-label="Mobile navigation" className="flex flex-col gap-6 my-auto">
-              <span className="font-sans font-bold uppercase tracking-[0.2em] text-[10px] text-tertiary">
+            <nav aria-label="Mobile navigation" className="flex flex-col gap-3.5 my-auto">
+              <span className="font-sans font-bold uppercase tracking-[0.2em] text-[9px] text-tertiary">
                 Navigation
               </span>
 
@@ -199,26 +199,26 @@ export function Navbar() {
                   key={label}
                   href={href}
                   onClick={closeMobileMenu}
-                  className="font-serif text-4xl sm:text-5xl text-foreground hover:text-accent hover:translate-x-2 transition-all duration-300 flex items-center justify-between"
-                  initial={{ opacity: 0, x: -20 }}
+                  className="font-serif text-2xl sm:text-3xl text-foreground hover:text-accent hover:translate-x-1.5 transition-all duration-300 flex items-center justify-between py-1 border-b border-border/30"
+                  initial={{ opacity: 0, x: -15 }}
                   animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.15 + i * 0.08, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                  transition={{ delay: 0.12 + i * 0.06, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
                 >
                   <span>{label}</span>
-                  <span className="font-mono text-xs text-muted-foreground">0{i + 1}</span>
+                  <span className="font-mono text-[10px] text-muted-foreground">0{i + 1}</span>
                 </motion.a>
               ))}
 
               <motion.a
                 href="#contact"
                 onClick={closeMobileMenu}
-                className="mt-4 inline-flex items-center justify-center gap-3 font-sans font-bold uppercase tracking-widest text-xs text-[#111111] bg-accent px-8 py-4 rounded-full hover:bg-accent-hover transition-colors duration-300 shadow-[0_0_25px_rgba(201,169,110,0.2)]"
-                initial={{ opacity: 0, y: 15 }}
+                className="mt-3 inline-flex items-center justify-center gap-2.5 font-sans font-bold uppercase tracking-wider text-[11px] text-[#111111] bg-accent px-6 py-3 rounded-full hover:bg-accent-hover transition-colors duration-300 shadow-[0_0_20px_rgba(201,169,110,0.2)]"
+                initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ delay: 0.35, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               >
                 <span>Get in Touch</span>
-                <ArrowUpRight className="w-4 h-4" />
+                <ArrowUpRight className="w-3.5 h-3.5" />
               </motion.a>
             </nav>
 

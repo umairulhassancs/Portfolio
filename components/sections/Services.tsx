@@ -57,16 +57,16 @@ export const services = [
     id: 'enterprise',
     icon: Server,
     num: '04',
-    title: 'Enterprise ERP & Multi-Tenant Systems',
-    tagline: 'Centralized institutional operations with granular role security.',
+    title: 'Institutional ERP & Management Systems',
+    tagline: 'Centralized institutional operations with granular role-based access.',
     deliverables: [
-      'Multi-campus, multi-shift scheduling & state machines',
-      'Financial ledgers, fee challans & profit/loss statements',
-      'Custom PDF/Excel report engines & QR verification tags',
-      'Redis rate limiting, Dockerization & Hostinger/Vercel deployment',
+      'Multi-campus student & staff scheduling workflows',
+      'On-premise biometric attendance sync & automated fee challans',
+      'Financial ledgers, payroll tables & PDF export generators',
+      'Secure PostgreSQL schemas with Prisma and role authorization',
     ],
-    cta: 'Engineer Enterprise ERP',
-    badge: 'Enterprise Architecture',
+    cta: 'Discuss Management Systems',
+    badge: 'ERP & Workflows',
   },
 ]
 
@@ -92,7 +92,7 @@ export function Services() {
             className="mb-0"
           />
           <p className="font-sans text-muted-foreground text-xs sm:text-base max-w-md leading-relaxed">
-            Direct, senior-level technical leadership — from initial system blueprints to high-load production deployment.
+            End-to-end software development — from system design and database implementation to testing and deployment.
           </p>
         </div>
 

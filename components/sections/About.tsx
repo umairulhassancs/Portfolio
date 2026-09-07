@@ -31,19 +31,19 @@ const PILLARS = [
 ]
 
 const STATS = [
-  { value: '4+', label: 'Years of Engineering Rigor' },
-  { value: 'Full-Stack', label: 'End-to-End System Delivery' },
-  { value: '<100ms', label: 'Target Latency & Optimization' },
+  { value: '5+', label: 'Major Software Projects' },
+  { value: 'Full-Stack', label: 'End-to-End Delivery' },
+  { value: 'Web + Mobile', label: 'Cross-Platform Platforms' },
 ]
 
 export function About() {
   return (
     <section id="about" className="py-20 sm:py-32 relative border-t border-border bg-surface/20">
       <div className="max-w-[1200px] mx-auto px-3 sm:px-6">
-        <SectionHeading number="05" title="About & Philosophy" />
+        <SectionHeading number="05" title="About &amp; Philosophy" />
 
         <div className="grid grid-cols-12 gap-3 sm:gap-12 lg:gap-16 items-start">
-          {/* Left Column: Senior Engineering Philosophy (Side by side on mobile) */}
+          {/* Left Column: Software Engineering Narrative (Side by side on mobile) */}
           <motion.div
             className="col-span-6 sm:col-span-6 lg:col-span-6 flex flex-col gap-2.5 sm:gap-6"
             initial={{ opacity: 0, y: 30 }}
@@ -52,19 +52,19 @@ export function About() {
             transition={{ duration: 0.8, ease }}
           >
             <p className="font-serif italic text-xs xs:text-sm sm:text-3xl text-foreground leading-snug">
-              &ldquo;True engineering excellence is found where robust architecture meets effortless human interaction.&rdquo;
+              &ldquo;I build full-stack web and mobile applications with a focus on clean architecture, practical UX, and reliable backend systems.&rdquo;
             </p>
 
             <p className="font-sans text-[10px] sm:text-lg text-muted-foreground leading-relaxed">
-              I am a Full-Stack Software Engineer dedicated to architecting reliable, high-performance systems from the database layer to the interactive client. My approach treats code as a long-term asset: structured for longevity, defensive against failure, and optimized for speed.
+              I am a Full-Stack Developer dedicated to engineering reliable, responsive software systems from the database layer to user interfaces. My projects span multi-vendor commerce, educational ERP, mobile AR, and applied AI.
             </p>
 
             <p className="font-sans text-[10px] sm:text-base text-muted-foreground leading-relaxed hidden xs:block">
-              Throughout my journey, I have specialized in building production-grade web applications, cross-platform mobile platforms, and applied deep learning pipelines. I operate with an end-to-end mindset — taking complex business and technical requirements from conceptual whiteboarding to fully deployed cloud infrastructure.
+              I enjoy taking products through their entire lifecycle: understanding business requirements, architecting database schemas, implementing secure authentication, and shipping responsive user experiences.
             </p>
 
             <p className="font-sans text-[10px] sm:text-base text-muted-foreground leading-relaxed hidden sm:block">
-              I believe that great software demands discipline: decoupled components, strict type safety, thoughtful asynchronous workflows, and an obsessive attention to user perceived latency.
+              I pay particular attention to performance, responsiveness, strict type safety, and clean code maintainability across both web and mobile environments.
             </p>
 
             {/* Resume Button */}

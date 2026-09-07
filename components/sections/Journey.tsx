@@ -9,39 +9,48 @@ const ease = [0.16, 1, 0.3, 1] as const
 const JOURNEY_MILESTONES = [
   {
     year: '2026',
-    role: 'Creator & Lead Architect',
-    title: 'Shipped Vouch Keychain',
-    project: 'Vouch Keychain',
+    role: 'Creator & Full-Stack Developer',
+    title: 'Shipped Vouch',
+    project: 'Vouch Platform',
     description:
-      'Designed and deployed a full production SaaS platform that pairs hardware QR tags with anonymous real-time communications. Engineered zero-knowledge messaging so finders and owners communicate without exposing personal information, built live GPS capture telemetry, and implemented a Three.js interactive 3D product visualizer.',
-    tags: ['Next.js 16', 'React 19', 'Firebase', 'Twilio SMS/Voice', 'Three.js', 'Resend', 'Production SaaS'],
+      'Designed and developed a SaaS platform connecting hardware QR tags with privacy-preserving communication between finders and owners. Implemented masked contact workflows, location-based recovery telemetry, real-time messaging, and an interactive Three.js 3D product visualizer.',
+    tags: ['Next.js 16', 'React 19', 'Firebase', 'Twilio', 'Three.js', 'Resend', 'SaaS Platform'],
+  },
+  {
+    year: '2026',
+    role: 'Full-Stack Developer',
+    title: 'Engineered Evershine Educational ERP',
+    project: 'Evershine Academy ERP & LMS',
+    description:
+      'Engineered comprehensive institutional management modules for a multi-campus academy. Implemented on-premise biometric fingerprint machine synchronization for staff/student attendance, automated fee challan generation, payroll ledgers, and secure role-based portals.',
+    tags: ['Next.js 16', 'React 19', 'TypeScript', 'Prisma', 'PostgreSQL', 'Biometric Hardware', 'Tailwind CSS'],
   },
   {
     year: '2025 – 2026',
-    role: 'Lead Developer & AI Engineer',
-    title: 'Engineered GardenMate Ecosystem',
+    role: 'Project Lead & Developer',
+    title: 'Developed GardenMate Ecosystem',
     project: 'GardenMate (Final Year Project)',
     description:
-      'Spearheaded the development of a comprehensive smart gardening and e-commerce mobile application. Fine-tuned a custom Vision Transformer (ViT) deep learning classifier recognizing 69 plant species, integrated interactive 3D AR plant previews in real space with Viro React, and architected 4 independent portals: Customer, Vendor, Rider, and Admin.',
+      'Built a smart gardening and e-commerce mobile application combining AI plant recognition, AR visualization, community features, and marketplace functionality. Fine-tuned a Vision Transformer classifier for 69 plant species, integrated AR plant previews using Viro React, and developed four role-specific portals for customers, vendors, riders, and administrators.',
     tags: ['React Native', 'Expo SDK 54', 'PyTorch ViT', 'FastAPI', 'Viro React AR', 'Firebase', 'Stripe'],
   },
   {
     year: '2024',
-    role: 'Full-Stack Developer',
-    title: 'Architected FinGo Marketplace',
+    role: 'Creator & Full-Stack Developer',
+    title: 'Built FinGo Multi-Vendor Marketplace',
     project: 'FinGo Multi-Vendor Platform',
     description:
-      'Engineered an end-to-end multi-vendor marketplace connecting verified retail and grocery stores across Lahore, Karachi, and Islamabad. Implemented secure role-based access control (RBAC), JWT authentication with refresh rotation, real-time inventory tracking, and full order processing pipelines.',
+      'Developed an end-to-end multi-vendor marketplace designed to connect retail and grocery stores with customers across Lahore, Karachi, and Islamabad. Implemented role-based access control, JWT authentication with refresh token rotation, real-time inventory tracking, and end-to-end order processing workflows.',
     tags: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT Auth', 'REST API'],
   },
   {
     year: '2022 – 2026',
-    role: 'B.S. in Computer Science',
+    role: 'BS in Computer Science',
     title: 'GIFT University',
     project: 'Academic Foundation',
     description:
-      'Completed four years of rigorous computer science education focusing on algorithmic complexity, data structures, distributed systems architecture, database management, and artificial intelligence.',
-    tags: ['Software Engineering', 'Data Structures', 'Distributed Systems', 'Computer Vision', 'Database Design'],
+      'Completed a four-year Computer Science degree covering software engineering, algorithms and data structures, databases, artificial intelligence, computer vision, and distributed systems.',
+    tags: ['Software Engineering', 'Data Structures', 'Distributed Systems', 'Computer Vision', 'Database Systems'],
   },
 ]
 
@@ -49,7 +58,7 @@ export function Journey() {
   return (
     <section id="journey" className="py-20 sm:py-32 relative">
       <div className="max-w-[1000px] mx-auto px-3 sm:px-6">
-        <SectionHeading number="06" title="The Journey" />
+        <SectionHeading number="06" title="Experience &amp; Projects" />
 
         {/* Timeline Container */}
         <div className="relative pl-4 sm:pl-10 md:pl-12 border-l border-border/80 ml-2 sm:ml-4">

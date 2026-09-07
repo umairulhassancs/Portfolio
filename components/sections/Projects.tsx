@@ -232,7 +232,7 @@ export function Projects() {
               Featured Systems &amp; Case Studies.
             </h2>
             <p className="font-sans text-muted-foreground text-xs sm:text-base max-w-md leading-relaxed">
-              Production SaaS platforms, mobile augmented reality ecosystems, and deep vision transformer pipelines. Click any case study for deep technical blueprints and interactive screen flows.
+              Full-stack web applications, mobile augmented reality platforms, and applied AI systems. Click any case study for system architecture and screen flows.
             </p>
           </div>
         </motion.div>

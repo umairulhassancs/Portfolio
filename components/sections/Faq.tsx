@@ -9,19 +9,19 @@ const ease = [0.16, 1, 0.3, 1] as const
 
 const faqs = [
   {
-    question: 'Are you available for full-time senior roles or contract development?',
+    question: 'What roles are you currently looking for?',
     answer:
-      'Yes, I am currently open to high-impact Full-Stack Software Engineer and Applied AI positions (remote or on-site), as well as selective architectural consulting and end-to-end product delivery contracts for startups and enterprise teams.',
+      'I am currently looking for full-time full-stack, web, and mobile software engineering opportunities, particularly roles involving TypeScript, React, Next.js, React Native, Node.js/Python backend APIs, and applied AI systems.',
   },
   {
     question: 'How do you approach fine-tuning and deploying custom AI models?',
     answer:
-      'I train and fine-tune deep learning models (such as Vision Transformers and PyTorch architectures) using curated domain datasets, optimize them via ONNX/TensorRT or quantization, and wrap them in high-throughput asynchronous FastAPI microservices to deliver sub-second inference directly into web or React Native mobile apps.',
+      'I train and fine-tune deep learning models (such as Vision Transformers and PyTorch architectures) using curated domain datasets, optimize them for inference, and wrap them in asynchronous FastAPI services to deliver low-latency inference directly into web or React Native mobile applications.',
   },
   {
     question: 'Can you handle both database architecture and frontend design?',
     answer:
-      'Absolutely. My core philosophy is end-to-end ownership: designing normalized PostgreSQL/MySQL schemas and Prisma migrations, structuring secure JWT/session authentication pipelines, and crafting silky-smooth, award-winning interfaces with Next.js 16, Tailwind CSS, and Framer Motion.',
+      'Yes. I enjoy end-to-end development: designing normalized PostgreSQL/MongoDB schemas and Prisma migrations, structuring secure JWT/session authentication, and building responsive, accessible interfaces with Next.js, Tailwind CSS, and Framer Motion.',
   },
   {
     question: 'How do you coordinate with teams across global time zones?',

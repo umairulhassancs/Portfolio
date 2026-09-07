@@ -300,22 +300,22 @@ export function ProjectDetailClient({
             </div>
 
             {/* Key Engineering Deliverables */}
-            <div className="p-8 sm:p-10 rounded-3xl bg-surface border border-border">
-              <div className="flex items-center gap-2.5 mb-4 text-xs font-mono text-accent uppercase tracking-widest">
-                <Cpu className="w-4 h-4" />
-                <span>Core Innovations</span>
+            <div className="p-4 sm:p-10 rounded-2xl sm:rounded-3xl bg-surface border border-border">
+              <div className="flex items-center gap-2 mb-2 sm:mb-4 text-[10px] sm:text-xs font-mono text-accent uppercase tracking-widest">
+                <Cpu className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
+                <span>Core Capabilities</span>
               </div>
-              <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-6">
+              <h2 className="font-serif text-xl sm:text-3xl font-bold text-foreground mb-3 sm:mb-6">
                 Key Engineering Highlights
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-2 sm:gap-4">
                 {project.highlights.map((item, i) => (
                   <div 
                     key={i} 
-                    className="p-4 rounded-2xl bg-background border border-border flex items-start gap-3"
+                    className="p-2.5 sm:p-4 rounded-xl sm:rounded-2xl bg-background border border-border flex items-start gap-1.5 sm:gap-3"
                   >
-                    <CheckCircle2 className="w-4 h-4 text-accent shrink-0 mt-0.5" />
-                    <span className="font-sans text-xs sm:text-sm text-foreground/90 leading-snug">
+                    <CheckCircle2 className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-accent shrink-0 mt-0.5" />
+                    <span className="font-sans text-[10px] sm:text-sm text-foreground/90 leading-tight">
                       {item.label}
                     </span>
                   </div>
@@ -399,20 +399,20 @@ export function ProjectDetailClient({
 
         {/* ── 3. KEY PRODUCTION BENCHMARKS (High-Impact Metrics) ───── */}
         {project.benchmarks && project.benchmarks.length > 0 && (
-          <section className="mb-16">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <section className="mb-12 sm:mb-16">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-4">
               {project.benchmarks.map((item, index) => (
                 <div
                   key={index}
-                  className="p-6 rounded-2xl bg-surface/80 border border-border hover:border-accent/40 transition-colors"
+                  className="p-3 sm:p-6 rounded-xl sm:rounded-2xl bg-surface/80 border border-border hover:border-accent/40 transition-colors"
                 >
-                  <div className="font-serif text-3xl sm:text-4xl font-bold text-accent mb-1">
+                  <div className="font-serif text-xl sm:text-4xl font-bold text-accent mb-0.5 sm:mb-1">
                     {item.metric}
                   </div>
-                  <h4 className="font-sans font-bold text-xs uppercase tracking-wider text-foreground mb-1">
+                  <h4 className="font-sans font-bold text-[10px] sm:text-xs uppercase tracking-wider text-foreground mb-0.5 sm:mb-1 truncate">
                     {item.label}
                   </h4>
-                  <p className="font-sans text-xs text-muted-foreground">
+                  <p className="font-sans text-[9px] sm:text-xs text-muted-foreground leading-snug line-clamp-3 sm:line-clamp-none">
                     {item.detail}
                   </p>
                 </div>
@@ -423,37 +423,37 @@ export function ProjectDetailClient({
 
         {/* ── 3. ARCHITECTURE PIPELINE & DATA FLOW ─────────────────── */}
         {project.architectureFlow && project.architectureFlow.length > 0 && (
-          <section className="mb-16 p-8 sm:p-10 rounded-3xl bg-surface border border-border">
-            <div className="flex items-center gap-2.5 mb-2 text-xs font-mono text-accent uppercase tracking-widest">
-              <GitMerge className="w-4 h-4" />
+          <section className="mb-12 sm:mb-16 p-4 sm:p-10 rounded-2xl sm:rounded-3xl bg-surface border border-border">
+            <div className="flex items-center gap-2 mb-1.5 sm:mb-2 text-[10px] sm:text-xs font-mono text-accent uppercase tracking-widest">
+              <GitMerge className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
               <span>Execution Pipeline</span>
             </div>
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            <h2 className="font-serif text-xl sm:text-3xl font-bold text-foreground mb-2 sm:mb-4">
               End-to-End System Data Flow
             </h2>
-            <p className="font-sans text-sm text-muted-foreground max-w-2xl mb-8 leading-relaxed">
+            <p className="font-sans text-xs sm:text-sm text-muted-foreground max-w-2xl mb-4 sm:mb-8 leading-relaxed">
               How user inputs, computer vision pipelines, and transaction protocols flow across the stack.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 sm:gap-4 relative">
               {project.architectureFlow.map((step, idx) => (
                 <div
                   key={step.step}
-                  className="relative p-5 rounded-2xl bg-background border border-border/80 flex flex-col justify-between"
+                  className="relative p-2.5 sm:p-5 rounded-xl sm:rounded-2xl bg-background border border-border/80 flex flex-col justify-between"
                 >
                   <div>
-                    <div className="flex items-center justify-between mb-3">
-                      <span className="font-mono text-xs font-bold text-accent px-2.5 py-0.5 rounded-full bg-accent/10 border border-accent/25">
+                    <div className="flex items-center justify-between mb-1.5 sm:mb-3">
+                      <span className="font-mono text-[9px] sm:text-xs font-bold text-accent px-1.5 sm:px-2.5 py-0.5 rounded-full bg-accent/10 border border-accent/25">
                         STEP {step.step}
                       </span>
                       {idx < project.architectureFlow.length - 1 && (
                         <span className="hidden md:inline-block text-muted-foreground text-xs font-mono">→</span>
                       )}
                     </div>
-                    <h4 className="font-sans font-bold text-sm text-foreground mb-2">
+                    <h4 className="font-sans font-bold text-xs sm:text-sm text-foreground mb-1 sm:mb-2 leading-tight">
                       {step.title}
                     </h4>
-                    <p className="font-sans text-xs text-muted-foreground leading-relaxed">
+                    <p className="font-sans text-[9px] sm:text-xs text-muted-foreground leading-snug line-clamp-3 sm:line-clamp-none">
                       {step.detail}
                     </p>
                   </div>
@@ -465,48 +465,48 @@ export function ProjectDetailClient({
 
         {/* ── 4. COMPLETE SYSTEM MODULES BREAKDOWN (12+ Modules) ────── */}
         {project.modules && project.modules.length > 0 && (
-          <section className="mb-16">
-            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
+          <section className="mb-12 sm:mb-16">
+            <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 sm:gap-4 mb-4 sm:mb-8">
               <div>
-                <div className="flex items-center gap-2.5 mb-2 text-xs font-mono text-accent uppercase tracking-widest">
-                  <Boxes className="w-4 h-4" />
+                <div className="flex items-center gap-2 mb-1.5 text-[10px] sm:text-xs font-mono text-accent uppercase tracking-widest">
+                  <Boxes className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
                   <span>Module Architecture</span>
                 </div>
-                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground">
+                <h2 className="font-serif text-xl sm:text-4xl font-bold text-foreground">
                   System Capabilities &amp; {project.modules.length}+ Functional Modules
                 </h2>
               </div>
-              <span className="font-mono text-xs text-tertiary bg-surface border border-border px-3 py-1.5 rounded-full self-start sm:self-auto">
-                {project.modules.length} Production Subsystems
+              <span className="font-mono text-[9px] sm:text-xs text-tertiary bg-surface border border-border px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full self-start sm:self-auto">
+                {project.modules.length}+ Integrated Modules
               </span>
             </div>
 
-            {/* Modules Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Modules Grid (2 columns on mobile) */}
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-6">
               {project.modules.map((module) => (
                 <div
                   key={module.id}
-                  className="p-6 rounded-2xl bg-surface border border-border hover:border-accent/50 transition-all duration-300 flex flex-col justify-between"
+                  className="p-2.5 sm:p-6 rounded-xl sm:rounded-2xl bg-surface border border-border hover:border-accent/50 transition-all duration-300 flex flex-col justify-between"
                 >
                   <div>
-                    <div className="flex items-center justify-between gap-2 mb-3">
-                      <span className="font-mono text-[10px] font-bold uppercase tracking-wider text-accent bg-accent/10 border border-accent/20 px-2.5 py-0.5 rounded-full">
+                    <div className="flex items-center justify-between gap-1.5 mb-1.5 sm:mb-3">
+                      <span className="font-mono text-[8px] sm:text-[10px] font-bold uppercase tracking-wider text-accent bg-accent/10 border border-accent/20 px-1.5 sm:px-2.5 py-0.5 rounded-full truncate max-w-[100px] sm:max-w-none">
                         {module.tag}
                       </span>
                     </div>
-                    <h3 className="font-sans font-bold text-base text-foreground mb-2">
+                    <h3 className="font-sans font-bold text-[11px] sm:text-base text-foreground mb-1 sm:mb-2 leading-tight">
                       {module.name}
                     </h3>
-                    <p className="font-sans text-xs text-muted-foreground leading-relaxed mb-4">
+                    <p className="font-sans text-[9px] sm:text-xs text-muted-foreground leading-snug mb-2 sm:mb-4 line-clamp-3 sm:line-clamp-none">
                       {module.description}
                     </p>
                   </div>
 
-                  <div className="pt-3 border-t border-border/60 space-y-1.5">
-                    {module.highlights.map((point, pIdx) => (
-                      <div key={pIdx} className="flex items-start gap-2 text-[11px] font-sans text-foreground/80">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-1.5" />
-                        <span>{point}</span>
+                  <div className="pt-2 sm:pt-3 border-t border-border/60 space-y-1">
+                    {module.highlights.slice(0, 2).map((point, pIdx) => (
+                      <div key={pIdx} className="flex items-start gap-1.5 text-[8px] sm:text-[11px] font-sans text-foreground/80">
+                        <span className="w-1 sm:w-1.5 h-1 sm:h-1.5 rounded-full bg-accent shrink-0 mt-1 sm:mt-1.5" />
+                        <span className="truncate sm:whitespace-normal">{point}</span>
                       </div>
                     ))}
                   </div>
@@ -518,36 +518,37 @@ export function ProjectDetailClient({
 
         {/* ── 5. ENGINEERING CHALLENGES & SOLUTIONS ────────────────── */}
         {project.challenges && project.challenges.length > 0 && (
-          <section className="mb-16 p-8 sm:p-10 rounded-3xl bg-surface border border-border">
-            <div className="flex items-center gap-2.5 mb-2 text-xs font-mono text-accent uppercase tracking-widest">
-              <ShieldAlert className="w-4 h-4" />
-              <span>Technical Hardening</span>
+          <section className="mb-12 sm:mb-16 p-4 sm:p-10 rounded-2xl sm:rounded-3xl bg-surface border border-border">
+            <div className="flex items-center gap-2 mb-1.5 sm:mb-2 text-[10px] sm:text-xs font-mono text-accent uppercase tracking-widest">
+              <ShieldAlert className="w-3.5 sm:w-4 h-3.5 sm:h-4" />
+              <span>Technical Analysis</span>
             </div>
-            <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground mb-8">
+            <h2 className="font-serif text-xl sm:text-3xl font-bold text-foreground mb-4 sm:mb-8">
               Key Engineering Bottlenecks &amp; Solutions
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Challenges Grid (2 columns on mobile) */}
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 sm:gap-6">
               {project.challenges.map((c, idx) => (
                 <div
                   key={idx}
-                  className="p-6 rounded-2xl bg-background border border-border/80 flex flex-col justify-between"
+                  className="p-2.5 sm:p-6 rounded-xl sm:rounded-2xl bg-background border border-border/80 flex flex-col justify-between"
                 >
                   <div>
-                    <span className="font-mono text-[10px] uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/30 px-2.5 py-0.5 rounded-full inline-block mb-3">
+                    <span className="font-mono text-[8px] sm:text-[10px] uppercase tracking-wider text-amber-400 bg-amber-500/10 border border-amber-500/30 px-1.5 sm:px-2.5 py-0.5 rounded-full inline-block mb-1.5 sm:mb-3">
                       Challenge 0{idx + 1}
                     </span>
-                    <h4 className="font-sans font-bold text-sm text-foreground mb-3 leading-snug">
+                    <h4 className="font-sans font-bold text-[10px] sm:text-sm text-foreground mb-1.5 sm:mb-3 leading-tight">
                       {c.challenge}
                     </h4>
-                    <p className="font-sans text-xs text-muted-foreground leading-relaxed mb-4">
+                    <p className="font-sans text-[8px] sm:text-xs text-muted-foreground leading-snug mb-2 sm:mb-4 line-clamp-4 sm:line-clamp-none">
                       {c.solution}
                     </p>
                   </div>
 
-                  <div className="pt-3 border-t border-border/60 flex items-center gap-1.5 text-[10px] font-mono text-emerald-400">
-                    <CheckCircle2 className="w-3.5 h-3.5" />
-                    <span>Engineered &amp; Hardened</span>
+                  <div className="pt-2 sm:pt-3 border-t border-border/60 flex items-center gap-1 text-[8px] sm:text-[10px] font-mono text-emerald-400">
+                    <CheckCircle2 className="w-3 sm:w-3.5 h-3 sm:h-3.5 shrink-0" />
+                    <span className="truncate">Implemented &amp; Verified</span>
                   </div>
                 </div>
               ))}

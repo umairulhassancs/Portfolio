@@ -43,8 +43,8 @@ const stages = [
   },
   {
     step: '04',
-    title: 'Hardening, CI/CD & Telemetry',
-    summary: 'Rigorous end-to-end testing, production deployment, and automated monitoring for bulletproof reliability.',
+    title: 'Hardening, CI/CD & Deployment',
+    summary: 'Rigorous testing, automated deployment workflows, and monitoring for reliable production delivery.',
     icon: Rocket,
     highlights: [
       'Vitest unit tests & Playwright visual E2E',
@@ -67,7 +67,7 @@ export function Process() {
             className="mb-0"
           />
           <p className="font-sans text-muted-foreground text-xs sm:text-base max-w-md leading-relaxed">
-            How complex ideas transform into fault-tolerant, award-winning software systems.
+            How ideas transform into reliable, maintainable software systems.
           </p>
         </div>
 

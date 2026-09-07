@@ -2,38 +2,38 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Activity, ShieldCheck, Cpu, Layers } from 'lucide-react'
+import { Globe, Smartphone, BrainCircuit, Layers } from 'lucide-react'
 
 const ease = [0.16, 1, 0.3, 1] as const
 
-const metrics = [
+const capabilities = [
   {
     icon: Layers,
     value: '5+',
-    label: 'Production Systems',
-    detail: 'Web SaaS, Mobile AR, Multi-Vendor, ERP & Voice AI architectures deployed.',
-    tag: 'Flagship Builds',
+    label: 'End-to-End Projects',
+    detail: 'Full-stack web, mobile, SaaS, ERP, commerce, and applied AI systems.',
+    tag: 'Projects',
   },
   {
-    icon: Activity,
-    value: '<50ms',
-    label: 'API Latency Benchmark',
-    detail: 'Optimized PostgreSQL/MongoDB indexing, Prisma transactions & edge caching.',
-    tag: 'High Throughput',
+    icon: Globe,
+    value: 'Web',
+    label: 'Full-Stack Development',
+    detail: 'React, Next.js, Node.js, REST APIs, authentication, and database schemas.',
+    tag: 'Platforms',
   },
   {
-    icon: Cpu,
-    value: '69+',
-    label: 'ViT Model Classes',
-    detail: 'Fine-tuned PyTorch Vision Transformer for sub-second plant diagnostics.',
-    tag: 'Applied AI',
+    icon: Smartphone,
+    value: 'Mobile',
+    label: 'React Native & Expo',
+    detail: 'Cross-platform iOS & Android apps with Firebase, APIs, and native hardware features.',
+    tag: 'Mobile Apps',
   },
   {
-    icon: ShieldCheck,
-    value: '100%',
-    label: 'Masked Privacy Architecture',
-    detail: 'Cryptographic QR routing and GPS telemetry with zero PII exposure.',
-    tag: 'Zero-Leak Security',
+    icon: BrainCircuit,
+    value: 'AI',
+    label: 'Applied AI & Vision',
+    detail: 'PyTorch, Vision Transformers, computer vision, voice AI, and model integrations.',
+    tag: 'Intelligent Systems',
   },
 ]
 
@@ -42,7 +42,7 @@ export function MetricsGrid() {
     <section className="py-8 sm:py-12 relative border-y border-border/80 bg-surface/30">
       <div className="max-w-[1200px] mx-auto px-3 sm:px-6">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-6">
-          {metrics.map((item, index) => {
+          {capabilities.map((item, index) => {
             const Icon = item.icon
             return (
               <motion.div
@@ -74,11 +74,6 @@ export function MetricsGrid() {
                   <p className="font-sans text-[10px] sm:text-xs text-muted-foreground leading-relaxed line-clamp-2 sm:line-clamp-none">
                     {item.detail}
                   </p>
-                </div>
-
-                <div className="mt-3 sm:mt-4 pt-2 sm:pt-3 border-t border-border/60 flex items-center gap-1.5 text-[9px] sm:text-[11px] font-mono text-tertiary">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                  <span>Verified</span>
                 </div>
               </motion.div>
             )

@@ -48,8 +48,8 @@ export function Hero() {
           {/* Status Badge */}
           <div className="mb-3 sm:mb-6 inline-flex items-center gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-1 sm:py-1.5 rounded-full bg-surface border border-border shadow-sm max-w-full">
             <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
-            <span className="font-sans font-bold uppercase tracking-[0.08em] sm:tracking-[0.16em] text-[8px] sm:text-[10px] text-muted-foreground truncate">
-              Available for Full-Time Roles
+            <span className="font-sans font-bold uppercase tracking-[0.06em] sm:tracking-[0.14em] text-[8px] sm:text-[10px] text-muted-foreground truncate">
+              Open to Full-Time Full-Stack, Web &amp; Mobile Development Roles
             </span>
           </div>
 
@@ -59,11 +59,11 @@ export function Hero() {
           </h1>
 
           <p className="font-sans font-medium text-[11px] xs:text-xs sm:text-lg md:text-xl text-foreground/90 max-w-xl mb-2 sm:mb-4 leading-snug">
-            Full-Stack Software Engineer &amp; Applied AI Specialist
+            Full-Stack Developer | Web, Mobile, SaaS &amp; Applied AI
           </p>
 
           <p className="font-sans text-[10px] sm:text-base md:text-lg text-muted-foreground max-w-xl mb-4 sm:mb-10 leading-relaxed line-clamp-3 sm:line-clamp-none">
-            Specializing in designing scalable web architectures, resilient distributed backends, and applied computer vision systems. I engineer production-ready digital products with an uncompromising focus on latency, clean abstraction, and high-performance user interfaces.
+            I build full-stack web and mobile applications with TypeScript, React, React Native, Node.js, and Python-based AI systems. My work spans multi-vendor commerce, educational ERP, SaaS platforms, mobile AR, and computer vision.
           </p>
 
           {/* Action CTAs */}
@@ -150,7 +150,7 @@ export function Hero() {
                     Umair Ul Hassan
                   </span>
                   <span className="hidden sm:block font-sans text-xs text-muted-foreground">
-                    Full-Stack Software Engineer
+                    Full-Stack Developer
                   </span>
                 </div>
 
