@@ -36,65 +36,65 @@ export function Hero() {
         className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-gradient-to-tr from-accent/10 via-accent/5 to-transparent blur-[140px] opacity-40 -z-10"
       />
 
-      <div className="max-w-[1200px] mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 grid grid-cols-12 gap-3 sm:gap-8 lg:gap-16 items-center">
         
         {/* Left Column: Headline & Senior Professional Bio */}
         <motion.div
-          className="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1"
+          className="col-span-7 sm:col-span-7 lg:col-span-7 flex flex-col items-start text-left order-1"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, ease }}
         >
           {/* Status Badge */}
-          <div className="mb-6 inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-surface border border-border shadow-sm">
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="font-sans font-bold uppercase tracking-[0.16em] text-[10px] text-muted-foreground">
-              Available for Full-Time Roles &amp; High-Impact Projects
+          <div className="mb-3 sm:mb-6 inline-flex items-center gap-1.5 sm:gap-2.5 px-2.5 sm:px-4 py-1 sm:py-1.5 rounded-full bg-surface border border-border shadow-sm max-w-full">
+            <span className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
+            <span className="font-sans font-bold uppercase tracking-[0.08em] sm:tracking-[0.16em] text-[8px] sm:text-[10px] text-muted-foreground truncate">
+              Available for Full-Time Roles
             </span>
           </div>
 
           {/* Name & Title */}
-          <h1 className="font-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight text-foreground leading-[1.02] mb-6">
+          <h1 className="font-serif text-2xl xs:text-3xl sm:text-5xl md:text-6xl lg:text-[5.5rem] tracking-tight text-foreground leading-[1.05] mb-2 sm:mb-6">
             Umair Ul <span className="italic text-accent">Hassan.</span>
           </h1>
 
-          <p className="font-sans font-medium text-lg sm:text-xl text-foreground/90 max-w-xl mb-4 leading-snug">
+          <p className="font-sans font-medium text-[11px] xs:text-xs sm:text-lg md:text-xl text-foreground/90 max-w-xl mb-2 sm:mb-4 leading-snug">
             Full-Stack Software Engineer &amp; Applied AI Specialist
           </p>
 
-          <p className="font-sans text-base sm:text-lg text-muted-foreground max-w-xl mb-10 leading-relaxed">
+          <p className="font-sans text-[10px] sm:text-base md:text-lg text-muted-foreground max-w-xl mb-4 sm:mb-10 leading-relaxed line-clamp-3 sm:line-clamp-none">
             Specializing in designing scalable web architectures, resilient distributed backends, and applied computer vision systems. I engineer production-ready digital products with an uncompromising focus on latency, clean abstraction, and high-performance user interfaces.
           </p>
 
           {/* Action CTAs */}
-          <div className="flex flex-wrap items-center gap-4 justify-center lg:justify-start mb-10">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-4 justify-start mb-4 sm:mb-10">
             <a
               href="#projects"
-              className="inline-flex items-center gap-2.5 font-sans font-bold uppercase tracking-[0.15em] text-[11px] text-[#0A0E17] bg-accent px-8 py-4 rounded-full hover:bg-accent-hover transition-all duration-300 shadow-[0_0_25px_rgba(56,189,248,0.3)] hover:shadow-[0_0_35px_rgba(56,189,248,0.5)]"
+              className="inline-flex items-center gap-1.5 sm:gap-2.5 font-sans font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-[9px] sm:text-[11px] text-[#0A0E17] bg-accent px-3.5 sm:px-8 py-2 sm:py-4 rounded-full hover:bg-accent-hover transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.25)] hover:shadow-[0_0_35px_rgba(56,189,248,0.5)]"
             >
-              <span>Explore Selected Work</span>
-              <ArrowDown className="w-3.5 h-3.5" />
+              <span>Explore Work</span>
+              <ArrowDown className="w-2.5 sm:w-3.5 h-2.5 sm:h-3.5" />
             </a>
 
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 font-sans font-bold uppercase tracking-[0.15em] text-[11px] text-foreground border border-border px-7 py-4 rounded-full hover:border-accent hover:text-accent hover:bg-surface transition-all duration-300"
+              className="inline-flex items-center gap-1 sm:gap-2 font-sans font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-[9px] sm:text-[11px] text-foreground border border-border px-3 sm:px-7 py-2 sm:py-4 rounded-full hover:border-accent hover:text-accent hover:bg-surface transition-all duration-300"
             >
-              <span>Get in Touch</span>
-              <ArrowUpRight className="w-3.5 h-3.5" />
+              <span>Contact</span>
+              <ArrowUpRight className="w-2.5 sm:w-3.5 h-2.5 sm:h-3.5" />
             </a>
           </div>
 
           {/* Social Quick Links */}
-          <div className="flex items-center gap-6 text-muted-foreground text-xs font-sans">
-            <span className="text-tertiary uppercase tracking-widest text-[10px] font-bold">Connect</span>
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-6 text-muted-foreground text-[9px] sm:text-xs font-sans">
+            <span className="text-tertiary uppercase tracking-widest text-[8px] sm:text-[10px] font-bold">Connect</span>
             <a
               href="https://github.com/umairulhassancs"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:text-accent transition-colors"
+              className="flex items-center gap-1 hover:text-accent transition-colors"
             >
-              <GithubIcon className="w-4 h-4" />
+              <GithubIcon className="w-3 sm:w-4 h-3 sm:h-4" />
               <span>GitHub</span>
             </a>
             <span className="text-border">·</span>
@@ -102,9 +102,9 @@ export function Hero() {
               href="https://linkedin.com/in/umairulhassancs"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:text-accent transition-colors"
+              className="flex items-center gap-1 hover:text-accent transition-colors"
             >
-              <LinkedInIcon className="w-4 h-4" />
+              <LinkedInIcon className="w-3 sm:w-4 h-3 sm:h-4" />
               <span>LinkedIn</span>
             </a>
           </div>
@@ -112,51 +112,51 @@ export function Hero() {
 
         {/* Right Column: Clean, Authentic Executive Portrait */}
         <motion.div
-          className="lg:col-span-5 flex justify-center lg:justify-end order-1 lg:order-2"
+          className="col-span-5 sm:col-span-5 lg:col-span-5 flex justify-end order-2"
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.2, ease }}
         >
-          <div className="relative w-full max-w-[360px] sm:max-w-[380px]">
+          <div className="relative w-full max-w-[150px] xs:max-w-[190px] sm:max-w-[300px] md:max-w-[360px] lg:max-w-[380px]">
             
             {/* Luminous Ice Aura Backlight */}
-            <AmbientGlow size="440px" opacity={0.18} />
+            <AmbientGlow size="340px" opacity={0.18} />
 
             {/* Clean Frame (No fake AI tags or gimmicks) */}
-            <div className="relative rounded-3xl overflow-hidden bg-surface border border-border shadow-[0_20px_50px_rgba(0,0,0,0.6)] p-3">
+            <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden bg-surface border border-border shadow-[0_15px_40px_rgba(0,0,0,0.6)] p-1.5 sm:p-3">
               
               {/* Natural Portrait */}
-              <div className="relative aspect-square w-full rounded-2xl overflow-hidden bg-surface">
+              <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl overflow-hidden bg-surface">
                 <Image
                   src={umairPortrait}
                   alt="Umair Ul Hassan — Full-Stack Software Engineer"
                   fill
                   priority
                   className="object-cover object-center"
-                  sizes="(max-width: 768px) 85vw, 380px"
+                  sizes="(max-width: 640px) 45vw, 380px"
                 />
 
                 {/* Subtle Inner Ring */}
                 <div 
                   aria-hidden="true" 
-                  className="absolute inset-0 pointer-events-none rounded-2xl ring-1 ring-inset ring-white/10" 
+                  className="absolute inset-0 pointer-events-none rounded-xl sm:rounded-2xl ring-1 ring-inset ring-white/10" 
                 />
               </div>
 
               {/* Bottom Clean Label */}
-              <div className="pt-3 pb-1 px-2 flex items-center justify-between">
-                <div className="flex flex-col">
-                  <span className="font-sans font-bold text-sm text-foreground">
+              <div className="pt-1.5 sm:pt-3 pb-0.5 sm:pb-1 px-1 sm:px-2 flex items-center justify-between">
+                <div className="flex flex-col truncate pr-1">
+                  <span className="font-sans font-bold text-[10px] sm:text-sm text-foreground truncate">
                     Umair Ul Hassan
                   </span>
-                  <span className="font-sans text-xs text-muted-foreground">
+                  <span className="hidden sm:block font-sans text-xs text-muted-foreground">
                     Full-Stack Software Engineer
                   </span>
                 </div>
 
-                <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-mono">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                  <span>PKT (UTC+5)</span>
+                <div className="flex items-center gap-1 sm:gap-1.5 text-[8px] sm:text-xs text-muted-foreground font-mono shrink-0">
+                  <span className="w-1 sm:w-1.5 h-1 sm:h-1.5 rounded-full bg-emerald-400" />
+                  <span>PKT</span>
                 </div>
               </div>
 

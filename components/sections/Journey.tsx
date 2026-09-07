@@ -47,8 +47,8 @@ const JOURNEY_MILESTONES = [
 
 export function Journey() {
   return (
-    <section id="journey" className="py-32 relative">
-      <div className="max-w-[1000px] mx-auto px-6">
+    <section id="journey" className="py-20 sm:py-32 relative">
+      <div className="max-w-[1000px] mx-auto px-3 sm:px-6">
         <SectionHeading number="04" title="The Journey" />
 
         {/* Timeline Container */}
@@ -56,7 +56,7 @@ export function Journey() {
           {JOURNEY_MILESTONES.map((milestone, index) => (
             <motion.div
               key={milestone.title}
-              className="mb-16 last:mb-0 relative group"
+              className="mb-12 sm:mb-16 last:mb-0 relative group"
               initial={{ opacity: 0, x: -25 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: '-60px' }}
@@ -69,7 +69,7 @@ export function Journey() {
               />
 
               {/* Milestone Card */}
-              <div className="p-6 sm:p-8 rounded-2xl bg-surface/70 border border-border group-hover:border-border-hover transition-all duration-300">
+              <div className="p-4 sm:p-8 rounded-2xl bg-surface/70 border border-border group-hover:border-border-hover transition-all duration-300">
                 {/* Year & Role Row */}
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                   <span className="font-sans font-bold uppercase tracking-[0.16em] text-xs text-accent">

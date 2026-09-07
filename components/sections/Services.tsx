@@ -81,29 +81,29 @@ export function Services() {
   }
 
   return (
-    <section id="capabilities" className="py-32 relative border-t border-border/80">
-      <div className="max-w-[1200px] mx-auto px-6">
+    <section id="capabilities" className="py-20 sm:py-32 relative border-t border-border/80">
+      <div className="max-w-[1200px] mx-auto px-3 sm:px-6">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-10 sm:mb-16">
           <SectionHeading
             number="03"
             title="Core Engineering Domains."
             className="mb-0"
           />
-          <p className="font-sans text-muted-foreground text-sm sm:text-base max-w-md">
+          <p className="font-sans text-muted-foreground text-xs sm:text-base max-w-md leading-relaxed">
             Direct, senior-level technical leadership — from initial system blueprints to high-load production deployment.
           </p>
         </div>
 
         {/* 2x2 Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
               <motion.div
                 key={service.id}
-                className="group relative p-8 sm:p-10 rounded-3xl bg-surface/80 border border-border hover:border-accent/50 hover:bg-surface transition-all duration-500 shadow-[0_10px_35px_rgba(0,0,0,0.4)] hover:shadow-[0_15px_45px_rgba(56,189,248,0.15)] flex flex-col justify-between"
+                className="group relative p-5 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl bg-surface/80 border border-border hover:border-accent/50 hover:bg-surface transition-all duration-500 shadow-[0_10px_35px_rgba(0,0,0,0.4)] hover:shadow-[0_15px_45px_rgba(56,189,248,0.15)] flex flex-col justify-between"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

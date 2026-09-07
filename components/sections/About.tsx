@@ -38,11 +38,11 @@ const STATS = [
 
 export function About() {
   return (
-    <section id="about" className="py-32 relative border-t border-border bg-surface/20">
-      <div className="max-w-[1200px] mx-auto px-6">
+    <section id="about" className="py-20 sm:py-32 relative border-t border-border bg-surface/20">
+      <div className="max-w-[1200px] mx-auto px-3 sm:px-6">
         <SectionHeading number="03" title="About & Philosophy" />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-start">
           {/* Left Column: Senior Engineering Philosophy */}
           <motion.div
             className="lg:col-span-6 flex flex-col gap-6"
@@ -84,7 +84,7 @@ export function About() {
           <div className="lg:col-span-6 flex flex-col gap-8">
             {/* Stats Row */}
             <motion.div
-              className="grid grid-cols-3 gap-4 p-6 rounded-2xl bg-surface border border-border"
+              className="grid grid-cols-3 gap-2 sm:gap-4 p-3.5 sm:p-6 rounded-2xl bg-surface border border-border"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -92,10 +92,10 @@ export function About() {
             >
               {STATS.map((stat, i) => (
                 <div key={i} className="flex flex-col">
-                  <span className="font-serif text-3xl sm:text-4xl text-accent font-medium">
+                  <span className="font-serif text-2xl sm:text-4xl text-accent font-medium">
                     {stat.value}
                   </span>
-                  <span className="font-sans text-[11px] sm:text-xs text-muted-foreground mt-1 leading-tight">
+                  <span className="font-sans text-[10px] sm:text-xs text-muted-foreground mt-0.5 sm:mt-1 leading-tight">
                     {stat.label}
                   </span>
                 </div>
@@ -103,13 +103,13 @@ export function About() {
             </motion.div>
 
             {/* Pillars Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {PILLARS.map((pillar, index) => {
                 const Icon = pillar.icon
                 return (
                   <motion.div
                     key={pillar.title}
-                    className="group p-6 rounded-2xl bg-surface border border-border hover:border-border-hover hover:shadow-[0_4px_25px_rgba(0,0,0,0.4)] transition-all duration-300 flex flex-col justify-between"
+                    className="group p-4 sm:p-6 rounded-2xl bg-surface border border-border hover:border-border-hover hover:shadow-[0_4px_25px_rgba(0,0,0,0.4)] transition-all duration-300 flex flex-col justify-between"
                     initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}

@@ -56,29 +56,29 @@ const stages = [
 
 export function Process() {
   return (
-    <section id="process" className="py-32 relative border-t border-border/80 bg-surface/20">
-      <div className="max-w-[1200px] mx-auto px-6">
+    <section id="process" className="py-20 sm:py-32 relative border-t border-border/80 bg-surface/20">
+      <div className="max-w-[1200px] mx-auto px-3 sm:px-6">
         
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-20">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 sm:gap-6 mb-10 sm:mb-20">
           <SectionHeading
             number="04"
             title="The Engineering Methodology."
             className="mb-0"
           />
-          <p className="font-sans text-muted-foreground text-sm sm:text-base max-w-md">
+          <p className="font-sans text-muted-foreground text-xs sm:text-base max-w-md leading-relaxed">
             How complex ideas transform into fault-tolerant, award-winning software systems.
           </p>
         </div>
 
         {/* 4-Step Pipeline */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 relative">
           {stages.map((stage, index) => {
             const Icon = stage.icon
             return (
               <motion.div
                 key={stage.step}
-                className="group relative p-8 rounded-3xl bg-surface border border-border hover:border-accent/50 hover:bg-surface-hover transition-all duration-400 flex flex-col justify-between"
+                className="group relative p-5 sm:p-8 rounded-2xl sm:rounded-3xl bg-surface border border-border hover:border-accent/50 hover:bg-surface-hover transition-all duration-400 flex flex-col justify-between"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

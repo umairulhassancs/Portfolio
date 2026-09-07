@@ -84,8 +84,8 @@ export function Contact() {
   ]
 
   return (
-    <section id="contact" className="py-32 relative border-t border-border bg-surface/30">
-      <div className="max-w-[1200px] mx-auto px-6 flex flex-col items-center text-center">
+    <section id="contact" className="py-20 sm:py-32 relative border-t border-border bg-surface/30">
+      <div className="max-w-[1200px] mx-auto px-3 sm:px-6 flex flex-col items-center text-center">
         
         {/* Section Heading */}
         <SectionHeading
