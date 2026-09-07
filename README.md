@@ -85,8 +85,8 @@ npm run build
 
 **Umair Ul Hassan**
 - **GitHub:** [@umairulhassancs](https://github.com/umairulhassancs)
-- **LinkedIn:** [linkedin.com/in/umairulhassancs](https://linkedin.com/in/umairulhassancs)
-- **Email:** [umairulhassancs@gmail.com](mailto:umairulhassancs@gmail.com)
+- **LinkedIn:** [linkedin.com/in/umair-ul-hassan-cs](https://www.linkedin.com/in/umair-ul-hassan-cs/)
+- **Email:** [umairulhassan.cs@gmail.com](mailto:umairulhassan.cs@gmail.com)
 
 ---
 

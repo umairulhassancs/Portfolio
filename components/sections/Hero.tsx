@@ -28,7 +28,7 @@ const ease = [0.16, 1, 0.3, 1] as const
 
 export function Hero() {
   return (
-    <section className="relative min-h-[92vh] flex items-center pt-32 pb-20 overflow-hidden">
+    <section className="relative flex items-center pt-24 sm:pt-32 pb-8 sm:pb-20 min-h-0 sm:min-h-[85vh] overflow-hidden">
       
       {/* Background Subtle Gradient Mesh */}
       <div 
@@ -99,7 +99,7 @@ export function Hero() {
             </a>
             <span className="text-border">·</span>
             <a
-              href="https://linkedin.com/in/umairulhassancs"
+              href="https://www.linkedin.com/in/umair-ul-hassan-cs/"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1 hover:text-accent transition-colors"

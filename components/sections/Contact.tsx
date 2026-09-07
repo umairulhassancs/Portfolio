@@ -34,7 +34,7 @@ const projectTypes = [
 export function Contact() {
   const [copied, setCopied] = useState(false)
   const [selectedTopic, setSelectedTopic] = useState('Full-Stack SaaS & Web Platforms')
-  const email = 'umairulhassan.dev@gmail.com'
+  const email = 'umairulhassan.cs@gmail.com'
 
   // Listen for custom service selection events from Services section
   useEffect(() => {
@@ -71,13 +71,13 @@ export function Contact() {
     },
     {
       label: 'LinkedIn',
-      handle: 'in/umairulhassancs',
-      href: 'https://linkedin.com/in/umairulhassancs',
+      handle: 'in/umair-ul-hassan-cs',
+      href: 'https://www.linkedin.com/in/umair-ul-hassan-cs/',
       Icon: LinkedInIcon,
     },
     {
       label: 'Direct Email',
-      handle: 'umairulhassan.dev@gmail.com',
+      handle: 'umairulhassan.cs@gmail.com',
       href: mailtoUrl,
       Icon: Mail,
     },
@@ -89,7 +89,7 @@ export function Contact() {
         
         {/* Section Heading */}
         <SectionHeading
-          number="06"
+          number="08"
           title="Let's build something enduring."
           className="justify-center text-center"
         />

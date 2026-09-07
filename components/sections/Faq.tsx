@@ -43,19 +43,17 @@ export function Faq() {
   }
 
   return (
-    <section id="faq" className="py-32 relative border-t border-border/80 bg-surface/30">
-      <div className="max-w-[960px] mx-auto px-6">
+    <section id="faq" className="py-20 sm:py-32 relative border-t border-border/80 bg-surface/30">
+      <div className="max-w-[960px] mx-auto px-3 sm:px-6">
         
         {/* Section Header */}
-        <div className="text-center flex flex-col items-center mb-16">
-          <div className="flex items-center gap-2 mb-3 font-mono text-xs text-accent uppercase tracking-widest">
-            <HelpCircle className="w-3.5 h-3.5" />
-            <span>Frequently Addressed</span>
-          </div>
-          <h2 className="font-serif text-4xl sm:text-5xl text-foreground font-bold tracking-tight mb-4">
-            Technical &amp; Collaboration FAQ.
-          </h2>
-          <p className="font-sans text-muted-foreground text-sm sm:text-base max-w-lg leading-relaxed">
+        <div className="mb-10 sm:mb-16">
+          <SectionHeading
+            number="07"
+            title="Technical & Collaboration FAQ."
+            className="mb-2"
+          />
+          <p className="font-sans text-muted-foreground text-xs sm:text-base max-w-lg leading-relaxed">
             Direct answers on architecture philosophy, model integration, and engagement options.
           </p>
         </div>

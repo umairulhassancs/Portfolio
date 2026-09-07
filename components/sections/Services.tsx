@@ -96,14 +96,14 @@ export function Services() {
           </p>
         </div>
 
-        {/* 2x2 Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
+        {/* 2x2 Services Grid (2 columns on mobile and desktop) */}
+        <div className="grid grid-cols-2 gap-2.5 sm:gap-8">
           {services.map((service, index) => {
             const Icon = service.icon
             return (
               <motion.div
                 key={service.id}
-                className="group relative p-5 sm:p-8 md:p-10 rounded-2xl sm:rounded-3xl bg-surface/80 border border-border hover:border-accent/50 hover:bg-surface transition-all duration-500 shadow-[0_10px_35px_rgba(0,0,0,0.4)] hover:shadow-[0_15px_45px_rgba(56,189,248,0.15)] flex flex-col justify-between"
+                className="group relative p-3 sm:p-8 md:p-10 rounded-xl sm:rounded-3xl bg-surface/80 border border-border hover:border-accent/50 hover:bg-surface transition-all duration-500 shadow-[0_10px_35px_rgba(0,0,0,0.4)] hover:shadow-[0_15px_45px_rgba(56,189,248,0.15)] flex flex-col justify-between"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -111,36 +111,36 @@ export function Services() {
               >
                 <div>
                   {/* Top Bar */}
-                  <div className="flex items-center justify-between gap-4 mb-6">
-                    <div className="flex items-center gap-2.5">
-                      <span className="font-mono text-xs font-semibold text-accent">
+                  <div className="flex items-center justify-between gap-1.5 sm:gap-4 mb-2 sm:mb-6">
+                    <div className="flex items-center gap-1 sm:gap-2.5">
+                      <span className="font-mono text-[10px] sm:text-xs font-semibold text-accent">
                         {service.num}
                       </span>
-                      <span className="text-border">/</span>
-                      <span className="font-mono text-[10px] uppercase tracking-wider text-tertiary bg-background/80 border border-border px-2.5 py-0.5 rounded-full">
+                      <span className="text-border hidden xs:inline">/</span>
+                      <span className="font-mono text-[8px] sm:text-[10px] uppercase tracking-wider text-tertiary bg-background/80 border border-border px-1.5 sm:px-2.5 py-0.5 rounded-full truncate max-w-[85px] sm:max-w-none">
                         {service.badge}
                       </span>
                     </div>
 
-                    <div className="p-3 rounded-2xl bg-background border border-border text-muted-foreground group-hover:text-accent group-hover:border-accent/40 transition-colors">
-                      <Icon className="w-5 h-5" />
+                    <div className="p-1.5 sm:p-3 rounded-lg sm:rounded-2xl bg-background border border-border text-muted-foreground group-hover:text-accent group-hover:border-accent/40 transition-colors shrink-0">
+                      <Icon className="w-3.5 sm:w-5 h-3.5 sm:h-5" />
                     </div>
                   </div>
 
                   {/* Title & Tagline */}
-                  <h3 className="font-serif text-2xl sm:text-3xl text-foreground font-bold mb-2 group-hover:text-accent transition-colors">
+                  <h3 className="font-serif text-xs xs:text-sm sm:text-3xl text-foreground font-bold mb-1 sm:mb-2 group-hover:text-accent transition-colors leading-snug">
                     {service.title}
                   </h3>
-                  <p className="font-sans text-sm text-muted-foreground mb-6 leading-relaxed">
+                  <p className="font-sans text-[10px] sm:text-sm text-muted-foreground mb-2.5 sm:mb-6 leading-relaxed line-clamp-2 sm:line-clamp-none">
                     {service.tagline}
                   </p>
 
                   {/* Deliverables */}
-                  <ul className="space-y-2.5 mb-8">
+                  <ul className="space-y-1 sm:space-y-2.5 mb-3 sm:mb-8">
                     {service.deliverables.map((item, i) => (
-                      <li key={i} className="flex items-start gap-2.5 font-sans text-xs text-foreground/80">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent shrink-0 mt-1.5" />
-                        <span>{item}</span>
+                      <li key={i} className={`flex items-start gap-1.5 sm:gap-2.5 font-sans text-[9px] sm:text-xs text-foreground/80 ${i >= 2 ? 'hidden sm:flex' : 'flex'}`}>
+                        <span className="w-1 sm:w-1.5 h-1 sm:h-1.5 rounded-full bg-accent shrink-0 mt-1 sm:mt-1.5" />
+                        <span className="truncate sm:whitespace-normal">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -149,10 +149,10 @@ export function Services() {
                 {/* Interactive Action Button */}
                 <button
                   onClick={() => handleSelectService(service.title)}
-                  className="w-full flex items-center justify-between p-4 rounded-2xl bg-background/80 hover:bg-accent/10 border border-border hover:border-accent/60 text-foreground hover:text-accent font-sans font-bold text-xs uppercase tracking-[0.14em] transition-all duration-300 group/btn"
+                  className="w-full flex items-center justify-between p-2 sm:p-4 rounded-lg sm:rounded-2xl bg-background/80 hover:bg-accent/10 border border-border hover:border-accent/60 text-foreground hover:text-accent font-sans font-bold text-[9px] sm:text-xs uppercase tracking-[0.08em] sm:tracking-[0.14em] transition-all duration-300 group/btn mt-2"
                 >
-                  <span>{service.cta}</span>
-                  <ArrowUpRight className="w-4 h-4 text-tertiary group-hover/btn:text-accent group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-all" />
+                  <span className="truncate mr-1">{service.cta}</span>
+                  <ArrowUpRight className="w-3 sm:w-4 h-3 sm:h-4 text-tertiary group-hover/btn:text-accent group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-all shrink-0" />
                 </button>
               </motion.div>
             )

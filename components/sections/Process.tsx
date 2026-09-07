@@ -71,14 +71,14 @@ export function Process() {
           </p>
         </div>
 
-        {/* 4-Step Pipeline */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 relative">
+        {/* 4-Step Pipeline (4 cards in one row on both mobile and desktop) */}
+        <div className="grid grid-cols-4 gap-1.5 sm:gap-6 relative">
           {stages.map((stage, index) => {
             const Icon = stage.icon
             return (
               <motion.div
                 key={stage.step}
-                className="group relative p-5 sm:p-8 rounded-2xl sm:rounded-3xl bg-surface border border-border hover:border-accent/50 hover:bg-surface-hover transition-all duration-400 flex flex-col justify-between"
+                className="group relative p-2 sm:p-8 rounded-xl sm:rounded-3xl bg-surface border border-border hover:border-accent/50 hover:bg-surface-hover transition-all duration-400 flex flex-col justify-between"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -86,26 +86,26 @@ export function Process() {
               >
                 <div>
                   {/* Step Pill */}
-                  <div className="flex items-center justify-between mb-6">
-                    <span className="font-mono text-xs font-bold text-accent px-3 py-1 rounded-full bg-accent/10 border border-accent/25">
-                      STAGE {stage.step}
+                  <div className="flex items-center justify-between mb-2 sm:mb-6">
+                    <span className="font-mono text-[8px] sm:text-xs font-bold text-accent px-1.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-accent/10 border border-accent/25 truncate">
+                      <span className="hidden xs:inline">STAGE </span>{stage.step}
                     </span>
-                    <div className="p-2.5 rounded-xl bg-background border border-border text-muted-foreground group-hover:text-accent group-hover:border-accent/40 transition-colors">
-                      <Icon className="w-4 h-4" />
+                    <div className="p-1 sm:p-2.5 rounded-lg sm:rounded-xl bg-background border border-border text-muted-foreground group-hover:text-accent group-hover:border-accent/40 transition-colors shrink-0">
+                      <Icon className="w-3 sm:w-4 h-3 sm:h-4" />
                     </div>
                   </div>
 
                   {/* Title & Summary */}
-                  <h3 className="font-serif text-xl sm:text-2xl text-foreground font-bold mb-3 group-hover:text-accent transition-colors">
+                  <h3 className="font-serif text-[10px] xs:text-xs sm:text-2xl text-foreground font-bold mb-1 sm:mb-3 group-hover:text-accent transition-colors leading-tight">
                     {stage.title}
                   </h3>
-                  <p className="font-sans text-xs text-muted-foreground leading-relaxed mb-6">
+                  <p className="font-sans text-[9px] sm:text-xs text-muted-foreground leading-snug mb-2 sm:mb-6 line-clamp-3 sm:line-clamp-none">
                     {stage.summary}
                   </p>
                 </div>
 
-                {/* Bullets */}
-                <div className="space-y-2 pt-4 border-t border-border/60">
+                {/* Bullets (hidden on mobile to keep 4-card row ultra clean) */}
+                <div className="space-y-2 pt-2 sm:pt-4 border-t border-border/60 hidden sm:block">
                   {stage.highlights.map((item, i) => (
                     <div key={i} className="flex items-start gap-2 font-sans text-[11px] text-foreground/80">
                       <CheckCircle2 className="w-3.5 h-3.5 text-accent shrink-0 mt-0.5" />

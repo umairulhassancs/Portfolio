@@ -240,7 +240,7 @@ export function Navbar() {
                   <GithubIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://linkedin.com/in/umairulhassancs"
+                  href="https://www.linkedin.com/in/umair-ul-hassan-cs/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-muted-foreground hover:text-accent transition-colors"
@@ -249,7 +249,7 @@ export function Navbar() {
                   <LinkedInIcon className="w-5 h-5" />
                 </a>
                 <a
-                  href="mailto:umairulhassan.dev@gmail.com"
+                  href="mailto:umairulhassan.cs@gmail.com"
                   className="text-muted-foreground hover:text-accent transition-colors"
                   aria-label="Email Umair"
                 >
