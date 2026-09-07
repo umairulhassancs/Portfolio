@@ -8,6 +8,7 @@ import { PhoneMockup } from '@/components/ui/PhoneMockup'
 import { BrowserMockup } from '@/components/ui/BrowserMockup'
 import { GrainOverlay } from '@/components/effects/GrainOverlay'
 import { ScrollProgressBar } from '@/components/ui/ScrollProgressBar'
+import { Footer } from '@/components/ui/Footer'
 import { 
   ArrowLeft, 
   ArrowUpRight, 
@@ -582,6 +583,8 @@ export function ProjectDetailClient({
         </div>
 
       </div>
+
+      <Footer />
     </main>
   )
 }

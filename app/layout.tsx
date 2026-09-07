@@ -6,6 +6,13 @@ export const metadata: Metadata = {
     default: 'Umair Ul Hassan — Full-Stack Engineer & AI Builder',
     template: '%s | Umair Ul Hassan',
   },
+  icons: {
+    icon: [
+      { url: '/icon.png', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
+    apple: '/apple-icon.png',
+  },
   description:
     'Full-Stack Software Engineer building production SaaS platforms, cross-platform mobile ecosystems, and applied AI systems — from database schema to deployed UI.',
   keywords: [

@@ -2,8 +2,10 @@
 
 import React, { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 import { Menu, X, ArrowUpRight, Mail } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import umairPortrait from '@/public/images/umair-new.png'
 
 /* Inline Brand Icons for Navbar & Mobile Overlay */
 function GithubIcon({ className }: { className?: string }) {
@@ -97,18 +99,36 @@ export function Navbar() {
       >
         <div className="max-w-[1200px] mx-auto px-6 flex items-center justify-between">
 
-          {/* Monogram / Logo */}
+          {/* Professional Brand Identity */}
           <a
             href="#"
             aria-label="Umair Ul Hassan — Back to top"
-            className="group flex items-center gap-2"
+            className="group flex items-center gap-2.5 sm:gap-3"
           >
-            <span className="font-serif italic text-2xl text-accent group-hover:text-accent-hover transition-colors duration-300">
-              UH.
-            </span>
-            <span className="hidden sm:inline-block font-sans font-medium text-[11px] uppercase tracking-[0.2em] text-muted-foreground opacity-60 group-hover:opacity-100 transition-opacity">
-              Portfolio
-            </span>
+            <div className="relative w-8 h-8 rounded-full overflow-hidden ring-1 ring-accent/40 group-hover:ring-accent transition-all shadow-[0_0_12px_rgba(56,189,248,0.25)] shrink-0">
+              <Image
+                src={umairPortrait}
+                alt="Umair Ul Hassan"
+                fill
+                sizes="32px"
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-300"
+              />
+              <span className="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-emerald-400 ring-2 ring-[#0A0E17]" />
+            </div>
+
+            <div className="flex flex-col text-left">
+              <div className="flex items-center gap-1.5">
+                <span className="font-sans font-bold text-xs sm:text-sm text-foreground group-hover:text-accent transition-colors tracking-tight">
+                  Umair Ul Hassan
+                </span>
+                <span className="hidden lg:inline-flex items-center text-[9px] font-mono px-1.5 py-0.2 rounded bg-surface border border-border text-accent">
+                  dev
+                </span>
+              </div>
+              <span className="font-mono text-[9px] sm:text-[10px] text-muted-foreground tracking-wider uppercase">
+                Full-Stack Engineer
+              </span>
+            </div>
           </a>
 
           {/* Desktop Navigation */}
@@ -177,8 +197,27 @@ export function Navbar() {
             transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* Top Bar inside Overlay */}
-            <div className="flex items-center justify-between border-b border-border/80 pb-6">
-              <span className="font-serif italic text-3xl text-accent">UH.</span>
+            <div className="flex items-center justify-between border-b border-border/80 pb-5">
+              <div className="flex items-center gap-2.5">
+                <div className="relative w-8 h-8 rounded-full overflow-hidden ring-1 ring-accent/40 shrink-0">
+                  <Image
+                    src={umairPortrait}
+                    alt="Umair Ul Hassan"
+                    fill
+                    sizes="32px"
+                    className="object-cover object-center"
+                  />
+                  <span className="absolute bottom-0 right-0 w-2 h-2 rounded-full bg-emerald-400 ring-2 ring-[#0A0E17]" />
+                </div>
+                <div className="flex flex-col text-left">
+                  <span className="font-sans font-bold text-sm text-foreground tracking-tight">
+                    Umair Ul Hassan
+                  </span>
+                  <span className="font-mono text-[9px] text-muted-foreground tracking-wider uppercase">
+                    Full-Stack Engineer
+                  </span>
+                </div>
+              </div>
               <button
                 aria-label="Close navigation menu"
                 className="p-2 text-foreground hover:text-accent transition-transform duration-300 hover:rotate-90"
