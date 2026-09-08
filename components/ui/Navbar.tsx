@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
-import { Menu, X, ArrowUpRight, Mail } from 'lucide-react'
+import { Menu, X, ArrowUpRight, Mail, FileText } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import umairPortrait from '@/public/images/umair-new.png'
 
@@ -156,6 +156,19 @@ export function Navbar() {
               )
             })}
 
+            {/* View CV Button */}
+            <a
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Umair's Curriculum Vitae (PDF)"
+              className="inline-flex items-center gap-1.5 font-sans font-bold uppercase tracking-[0.16em] text-[11px] text-muted-foreground hover:text-accent border border-border/80 hover:border-accent/40 bg-surface/40 hover:bg-surface px-3 py-1.5 rounded-full transition-all duration-300 group"
+            >
+              <FileText className="w-3.5 h-3.5 text-accent group-hover:scale-105 transition-transform" />
+              <span>CV</span>
+              <ArrowUpRight className="w-3 h-3 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+            </a>
+
             {/* High-End Outline CTA Button */}
             <a
               href="#contact"
@@ -249,12 +262,27 @@ export function Navbar() {
               ))}
 
               <motion.a
-                href="#contact"
+                href="/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={closeMobileMenu}
-                className="mt-3 inline-flex items-center justify-center gap-2.5 font-sans font-bold uppercase tracking-wider text-[11px] text-[#111111] bg-accent px-6 py-3 rounded-full hover:bg-accent-hover transition-colors duration-300 shadow-[0_0_20px_rgba(201,169,110,0.2)]"
+                className="mt-3 inline-flex items-center justify-center gap-2 font-sans font-bold uppercase tracking-wider text-[11px] text-foreground border border-border bg-surface/60 hover:border-accent hover:text-accent px-6 py-2.5 rounded-full transition-all duration-300"
                 initial={{ opacity: 0, y: 12 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.35, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ delay: 0.32, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              >
+                <FileText className="w-3.5 h-3.5 text-accent" />
+                <span>View CV / Resume</span>
+                <ArrowUpRight className="w-3 h-3 opacity-60" />
+              </motion.a>
+
+              <motion.a
+                href="#contact"
+                onClick={closeMobileMenu}
+                className="mt-1 inline-flex items-center justify-center gap-2.5 font-sans font-bold uppercase tracking-wider text-[11px] text-[#111111] bg-accent px-6 py-3 rounded-full hover:bg-accent-hover transition-colors duration-300 shadow-[0_0_20px_rgba(201,169,110,0.2)]"
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.38, duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
               >
                 <span>Get in Touch</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />

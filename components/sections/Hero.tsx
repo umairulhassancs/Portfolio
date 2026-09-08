@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { AmbientGlow } from '@/components/effects/AmbientGlow'
-import { ArrowDown, ArrowUpRight } from 'lucide-react'
+import { ArrowDown, ArrowUpRight, FileText } from 'lucide-react'
 import umairPortrait from '@/public/images/umair-new.png'
 
 /* Inline Brand SVGs */
@@ -67,21 +67,25 @@ export function Hero() {
           </p>
 
           {/* Action CTAs */}
-          <div className="flex flex-wrap items-center gap-2 sm:gap-4 justify-start mb-4 sm:mb-10">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3.5 justify-start mb-4 sm:mb-10">
             <a
               href="#projects"
-              className="inline-flex items-center gap-1.5 sm:gap-2.5 font-sans font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-[9px] sm:text-[11px] text-[#0A0E17] bg-accent px-3.5 sm:px-8 py-2 sm:py-4 rounded-full hover:bg-accent-hover transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.25)] hover:shadow-[0_0_35px_rgba(56,189,248,0.5)]"
+              className="inline-flex items-center gap-1.5 sm:gap-2.5 font-sans font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-[9px] sm:text-[11px] text-[#0A0E17] bg-accent px-3.5 sm:px-7 py-2 sm:py-3.5 rounded-full hover:bg-accent-hover transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.25)] hover:shadow-[0_0_35px_rgba(56,189,248,0.5)]"
             >
               <span>Explore Work</span>
               <ArrowDown className="w-2.5 sm:w-3.5 h-2.5 sm:h-3.5" />
             </a>
 
             <a
-              href="#contact"
-              className="inline-flex items-center gap-1 sm:gap-2 font-sans font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-[9px] sm:text-[11px] text-foreground border border-border px-3 sm:px-7 py-2 sm:py-4 rounded-full hover:border-accent hover:text-accent hover:bg-surface transition-all duration-300"
+              href="/cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View Umair's Curriculum Vitae (PDF)"
+              className="inline-flex items-center gap-1.5 sm:gap-2 font-sans font-bold uppercase tracking-[0.1em] sm:tracking-[0.15em] text-[9px] sm:text-[11px] text-foreground border border-border/90 hover:border-accent/80 hover:text-accent bg-surface/80 hover:bg-surface px-3.5 sm:px-6 py-2 sm:py-3.5 rounded-full transition-all duration-300 group shadow-sm"
             >
-              <span>Contact</span>
-              <ArrowUpRight className="w-2.5 sm:w-3.5 h-2.5 sm:h-3.5" />
+              <FileText className="w-2.5 sm:w-3.5 h-2.5 sm:h-3.5 text-accent group-hover:scale-110 transition-transform" />
+              <span>View CV</span>
+              <ArrowUpRight className="w-2.5 sm:w-3.5 h-2.5 sm:h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
             </a>
           </div>
 

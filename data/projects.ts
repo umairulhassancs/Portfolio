@@ -554,7 +554,7 @@ export const projects: Project[] = [
     type: 'Mobile App',
     status: 'Completed',
     platformBadge: 'React Native & Expo SDK 54',
-    coverImage: '/images/nutrilens/2.jpeg',
+    coverImage: '/images/nutrilens/4.jpeg',
     description:
       'Enterprise-grade mobile intelligence platform converting food photography and grocery barcodes into real-time macronutrient telemetry and clinical metabolic coaching.',
     longDescription:
