@@ -51,6 +51,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+  verification: {
+    google: 'IUHJ2hdBGo1XhB7E1L-XGtskLc_rxRs0m8cjXc3M8ug',
+  },
 }
 
 export default function RootLayout({
@@ -61,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="IUHJ2hdBGo1XhB7E1L-XGtskLc_rxRs0m8cjXc3M8ug" />
         {/* Font preconnects */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
