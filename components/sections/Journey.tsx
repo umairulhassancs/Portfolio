@@ -27,7 +27,7 @@ const JOURNEY_MILESTONES = [
   },
   {
     year: '2025',
-    role: 'Creator & Mobile Engineer',
+    role: 'Creator & Mobile Developer',
     title: 'Engineered NutriLens AI Platform',
     project: 'NutriLens AI Engine',
     description:

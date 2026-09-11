@@ -126,7 +126,7 @@ export function Navbar() {
                 </span>
               </div>
               <span className="font-mono text-[9px] sm:text-[10px] text-muted-foreground tracking-wider uppercase">
-                Full-Stack Engineer
+                Full-Stack Developer
               </span>
             </div>
           </a>
@@ -227,7 +227,7 @@ export function Navbar() {
                     Umair Ul Hassan
                   </span>
                   <span className="font-mono text-[9px] text-muted-foreground tracking-wider uppercase">
-                    Full-Stack Engineer
+                    Full-Stack Developer
                   </span>
                 </div>
               </div>

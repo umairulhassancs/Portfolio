@@ -11,7 +11,7 @@ const faqs = [
   {
     question: 'What roles are you currently looking for?',
     answer:
-      'I am currently looking for full-time full-stack, web, and mobile software engineering opportunities, particularly roles involving TypeScript, React, Next.js, React Native, Node.js/Python backend APIs, and applied AI systems.',
+      'I am currently looking for full-time Full-Stack, Web, and Mobile Developer opportunities, particularly roles involving TypeScript, React, Next.js, React Native, Node.js/Python backend APIs, and applied AI systems.',
   },
   {
     question: 'How do you approach fine-tuning and deploying custom AI models?',

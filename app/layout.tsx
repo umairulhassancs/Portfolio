@@ -3,7 +3,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Umair Ul Hassan — Full-Stack Engineer & AI Builder',
+    default: 'Umair Ul Hassan — Full-Stack Developer | Web, Mobile, SaaS & Applied AI',
     template: '%s | Umair Ul Hassan',
   },
   icons: {
@@ -14,32 +14,32 @@ export const metadata: Metadata = {
     apple: '/apple-icon.png',
   },
   description:
-    'Full-Stack Software Engineer building production SaaS platforms, cross-platform mobile ecosystems, and applied AI systems — from database schema to deployed UI.',
+    'I build full-stack web and mobile applications with TypeScript, React, React Native, Node.js, and Python-based AI systems. My work spans multi-vendor commerce, educational ERP, SaaS platforms, mobile AR, and computer vision.',
   keywords: [
     'Umair Ul Hassan',
-    'Full-Stack Engineer',
+    'Full-Stack Developer',
     'React Native',
     'Next.js',
     'Applied AI',
     'Computer Vision',
     'PyTorch',
-    'Pakistan Software Engineer',
+    'Pakistan Full-Stack Developer',
   ],
   authors: [{ name: 'Umair Ul Hassan' }],
   creator: 'Umair Ul Hassan',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    title: 'Umair Ul Hassan — Full-Stack Engineer & AI Builder',
+    title: 'Umair Ul Hassan — Full-Stack Developer | Web, Mobile, SaaS & Applied AI',
     description:
-      'Building production SaaS platforms, mobile ecosystems, and applied AI systems.',
+      'I build full-stack web and mobile applications with TypeScript, React, React Native, Node.js, and Python-based AI systems.',
     siteName: 'Umair Ul Hassan',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Umair Ul Hassan — Full-Stack Engineer & AI Builder',
+    title: 'Umair Ul Hassan — Full-Stack Developer | Web, Mobile, SaaS & Applied AI',
     description:
-      'Building production SaaS platforms, mobile ecosystems, and applied AI systems.',
+      'I build full-stack web and mobile applications with TypeScript, React, React Native, Node.js, and Python-based AI systems.',
   },
   robots: {
     index: true,

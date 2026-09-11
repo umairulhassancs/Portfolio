@@ -99,7 +99,7 @@ export function Footer() {
                 </span>
               </div>
               <p className="font-sans text-xs sm:text-sm text-muted-foreground mt-1 max-w-lg leading-relaxed">
-                Full-Stack Software Engineer specializing in scalable web architectures, cross-platform mobile apps (React Native), and applied AI systems. Focused on clean code, reliability, and intuitive product UX.
+                Full-Stack Developer specializing in scalable web architectures, cross-platform mobile apps (React Native), and applied AI systems. Focused on clean code, reliability, and intuitive product UX.
               </p>
             </div>
           </div>

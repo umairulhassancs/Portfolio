@@ -132,7 +132,7 @@ export function Hero() {
               <div className="relative aspect-square w-full rounded-xl sm:rounded-2xl overflow-hidden bg-surface">
                 <Image
                   src={umairPortrait}
-                  alt="Umair Ul Hassan — Full-Stack Software Engineer"
+                  alt="Umair Ul Hassan — Full-Stack Developer"
                   fill
                   priority
                   className="object-cover object-center"

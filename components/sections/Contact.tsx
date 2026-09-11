@@ -36,7 +36,7 @@ const projectTypes = [
   'Applied AI & Deep Learning Models',
   'Cross-Platform Mobile & AR Apps',
   'Enterprise ERP & Systems',
-  'Full-Time Engineering Role',
+  'Full-Time Full-Stack Developer Role',
 ]
 
 export function Contact() {
