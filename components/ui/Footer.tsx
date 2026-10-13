@@ -4,7 +4,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
-import { ArrowUp, ArrowUpRight, Mail, Code2, FileText } from 'lucide-react'
+import { ArrowUp, ArrowUpRight, Mail, Code2 } from 'lucide-react'
 import umairPortrait from '@/public/images/umair-new.png'
 
 /* Inline Brand SVGs */
@@ -166,19 +166,6 @@ export function Footer() {
               Connect
             </span>
             <ul className="space-y-2">
-              <li>
-                <a
-                  href="/cv.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="View Umair's Curriculum Vitae (PDF)"
-                  className="inline-flex items-center gap-2 font-sans text-xs text-foreground font-medium hover:text-accent transition-colors py-0.5 group"
-                >
-                  <FileText className="w-3.5 h-3.5 text-accent" />
-                  <span>Curriculum Vitae (CV)</span>
-                  <ArrowUpRight className="w-3 h-3 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                </a>
-              </li>
               <li>
                 <a
                   href="https://github.com/umairulhassancs"

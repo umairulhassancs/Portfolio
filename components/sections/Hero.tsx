@@ -4,7 +4,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { AmbientGlow } from '@/components/effects/AmbientGlow'
-import { ArrowDown, ArrowUpRight } from 'lucide-react'
+import { ArrowDown } from 'lucide-react'
 import umairPortrait from '@/public/images/umair-new.png'
 
 /* Inline Brand SVGs */
@@ -74,17 +74,6 @@ export function Hero() {
             >
               <span>Explore Work</span>
               <ArrowDown className="w-2.5 sm:w-3.5 h-2.5 sm:h-3.5" />
-            </a>
-
-            <a
-              href="/cv.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="View Umair's Curriculum Vitae (PDF)"
-              className="inline-flex items-center gap-1 sm:gap-2 font-sans font-bold uppercase tracking-[0.08em] sm:tracking-[0.15em] text-[8.5px] xs:text-[9px] sm:text-[11px] text-foreground border border-border/90 hover:border-accent/80 hover:text-accent bg-surface/80 hover:bg-surface px-2.5 xs:px-3 sm:px-6 py-2 sm:py-3.5 rounded-full transition-all duration-300 group shadow-sm shrink-0 whitespace-nowrap"
-            >
-              <span>View CV</span>
-              <ArrowUpRight className="w-2.5 sm:w-3.5 h-2.5 sm:h-3.5 opacity-60 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
             </a>
           </div>
 

@@ -3,7 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { SectionHeading } from '@/components/ui/SectionHeading'
-import { FileText, ArrowUpRight, Cpu, Layers, Sparkles, Terminal } from 'lucide-react'
+import { Cpu, Layers, Sparkles, Terminal } from 'lucide-react'
 
 const ease = [0.16, 1, 0.3, 1] as const
 
@@ -66,18 +66,6 @@ export function About() {
             <p className="font-sans text-[10px] sm:text-base text-muted-foreground leading-relaxed hidden sm:block">
               I pay particular attention to performance, responsiveness, strict type safety, and clean code maintainability across both web and mobile environments.
             </p>
-
-            {/* Resume Button */}
-            <div className="pt-1 sm:pt-4">
-              <a
-                href="#contact"
-                className="group inline-flex items-center gap-1.5 sm:gap-3 font-sans font-bold uppercase tracking-[0.08em] sm:tracking-[0.16em] text-[8px] xs:text-[10px] sm:text-[11px] text-accent border border-accent/60 px-2.5 sm:px-7 py-1.5 sm:py-3.5 rounded-full hover:border-accent hover:bg-accent hover:text-[#0A0E17] transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.15)]"
-              >
-                <FileText className="w-3 sm:w-4 h-3 sm:h-4 shrink-0" />
-                <span className="truncate">Contact for CV</span>
-                <ArrowUpRight className="w-3 sm:w-3.5 h-3 sm:h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform shrink-0" />
-              </a>
-            </div>
           </motion.div>
 
           {/* Right Column: Architectural Pillars & Metrics (Side by side on mobile) */}
